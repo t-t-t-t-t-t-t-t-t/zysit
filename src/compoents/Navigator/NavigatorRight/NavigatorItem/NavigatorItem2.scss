@@ -1,0 +1,127 @@
+@import '../../../../global.scss';
+
+.NavigatorItem2 {
+    height: 100%;
+    padding: 0 15px;
+    background-color: #fff;
+    position: relative;
+
+    .link {
+        height: 100%;
+        background-color: #fff;
+        color: $navigatorFontColor;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        font-size: 16px;
+
+        cursor: pointer;
+
+        s {
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 5px solid transparent;
+            border-top-color: $navigatorFontColor;
+            left: 5px;
+            margin: 0 0 -8px;
+            position: relative;
+            width: 0;
+        }
+
+        .buttonLine {
+            width: 0%;
+            height: 3px;
+
+            display: inline-block;
+            position: absolute;
+            transition: all 0.6s;
+            background: $navigatorActiveBottmLineColor;
+
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+
+        &:hover {
+
+            .buttonLine {
+                width: 100%;
+            }
+        }
+    }
+
+    .list {
+        $listItemWidth: 160px;
+        $listWidth: $listItemWidth/0.45;
+        width: $listWidth;
+        position: absolute;
+        left: 0;
+        transform: translateX(-25%);
+        background-color: #fff;
+        padding: 20px 0;
+
+        display: flex;
+        justify-content: space-around;
+
+        box-shadow: 0 0 10px 0 #c0c0c0bb;
+        transition: all 0.4s;
+
+        .listLeft {
+            width: $listItemWidth;
+            border-right: 1px solid #bababa;
+
+            .listItem {
+                display: block;
+                text-decoration: none;
+                height: 44px;
+                line-height: 44px;
+                width: $listItemWidth;
+                padding: 0 auto;
+                color: #333;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $navigatorActiveBgColor;
+                    color: $navigatorActiveFontColor;
+                }
+            }
+        }
+
+        .listRight {
+            width: $listItemWidth;
+            height: 100%;
+
+            .listContentItem {
+                display: block;
+                text-decoration: none;
+                line-height: 44px;
+                padding: 0 10%;
+                color: #333;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                i {
+                    display: block;
+                    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                    border: 5px solid transparent;
+                    border-top-color: #afb0b3;
+                    position: relative;
+                    width: 0px;
+                    height: 5px;
+                }
+
+                &:hover {
+                    color: $navigatorActiveFontColor;
+
+                    i {
+                        border-top-color: $navigatorActiveFontColor;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../Navigator.scss';
+
+.NavigatorRight2 {
+    $height: $navigatorBarHeight *0.7;
+    height: $height;
+    padding: 10px 14px;
+
+    border-radius: $height;
+
+    position: relative;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+
+    border: 1px solid $navigatorActiveBottmLineColor;
+
+
+    .phoneIcon {
+        $iconHeight: $height*0.8;
+        height: $iconHeight;
+    }
+
+    .phoneNum {
+        font-weight: 900;
+        color: $navigatorActiveFontColor;
+    }
+}

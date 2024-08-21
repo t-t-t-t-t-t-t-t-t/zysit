@@ -1,0 +1,32 @@
+@import '../../global.scss';
+$navigatorBarHeight: 70px;
+
+.navigatorBar {
+
+    width: 100%;
+    height: $navigatorBarHeight;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.6s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+    background-color: #fff;
+    border-bottom: 1px solid #d7dbdb;
+
+    display: flex;
+    align-items: center;
+
+
+    .content {
+        @include globalWidth();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: $navigatorBarHeight;
+    }
+}

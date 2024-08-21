@@ -1,0 +1,18 @@
+@mixin globalWidth {
+    width: 75%;
+    max-width: 1440px;
+    min-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+
+    @media screen and (max-width:1680px) {
+        width: 80%;
+    }
+}
+
+// Navigator
+$navigatorFontColor: #323334;
+$navigatorActiveFontColor: #1274e2;
+$navigatorActiveBgColor: #f1f7fd;
+$navigatorActiveBottmLineColor: #1275e5;

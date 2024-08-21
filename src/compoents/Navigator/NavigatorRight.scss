@@ -1,0 +1,10 @@
+.NavigatorRight {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: all .6s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #fff;
+}
