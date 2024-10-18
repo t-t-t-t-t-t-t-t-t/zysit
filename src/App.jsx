@@ -8,29 +8,12 @@ import { Production } from "./pages/Production/Production";
 import { Serve } from "./pages/Serve/Serve";
 import { Solution } from "./pages/Solution/solution";
 
-import { useEffect, useRef, useState } from "react";
 function App() {
-  // 获取页面的高
-  const navigatorDom = useRef(null)
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window
-    return { innerHeight, innerWidth }
-  }
-  const [WindowSize, setWindowSize] = useState(getWindowSize())
-  const [bodyHeight, setBodyHeight] = useState(WindowSize.innerHeight - 70)
-  const [NavigatorHeight, setNavigatorHeight] = useState(0)
-  useEffect(() => {
-    console.log(navigatorDom)
-    setWindowSize(getWindowSize())
-    setNavigatorHeight(navigatorDom.current.offsetHeight)
-    setBodyHeight(WindowSize.offsetHeight - navigatorDom.current.offsetHeight)
-
-  }, [])
   return (
     <div className="App">
-      <Navigator ref={navigatorDom}></Navigator>
+      <Navigator></Navigator>
       <div className="Body"
-        style={{ position: 'relative', top: NavigatorHeight, height: bodyHeight }}>
+        style={{ position: 'relative' }}>
         <Routes>
           <Route path="/" Component={Home}></Route>
           <Route path="/about" Component={About}></Route>

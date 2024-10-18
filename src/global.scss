@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 @mixin globalWidth {
     width: 75%;
     max-width: 1440px;
@@ -16,3 +21,4 @@ $navigatorFontColor: #323334;
 $navigatorActiveFontColor: #1274e2;
 $navigatorActiveBgColor: #f1f7fd;
 $navigatorActiveBottmLineColor: #1275e5;
+$navigatorBarHeight: 70px;

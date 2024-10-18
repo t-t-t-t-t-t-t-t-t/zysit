@@ -1,5 +1,4 @@
 @import '../../global.scss';
-$navigatorBarHeight: 70px;
 
 .navigatorBar {
 
@@ -7,7 +6,7 @@ $navigatorBarHeight: 70px;
     height: $navigatorBarHeight;
     box-sizing: border-box;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
@@ -23,6 +22,7 @@ $navigatorBarHeight: 70px;
 
     .content {
         @include globalWidth();
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;

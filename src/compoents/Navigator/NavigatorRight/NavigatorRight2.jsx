@@ -1,9 +1,9 @@
-
 import './NavigatorRight2.scss'
+import phoneSrc from '../../../assets/icons/phone.png'
 export function NavigatorRight2() {
     return (
         <div className="NavigatorRight2" >
-            <img className="phoneIcon" src="//32584018.s21i.faiusr.com/4/ABUIABAEGAAg1Yy5tAYosMm39QQwsAk4sAk!60x60.png" alt="" />
+            <img className="phoneIcon" src={phoneSrc} alt="" />
             <span className="phoneNum">
                 13691771927
             </span>

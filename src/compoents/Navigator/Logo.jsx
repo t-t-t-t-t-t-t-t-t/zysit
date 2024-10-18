@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logoSrc from '../../assets/imgs/logo.png'
 export function Logo() {
     return (
         <div className='Logo'
@@ -16,8 +17,7 @@ export function Logo() {
                         display: 'inline-block',
                         width: '185px',
                         verticalAlign: 'text-bottom'
-
-                    }} title="深圳市智源空间创新科技有限公司" alt="深圳市智源空间创新科技有限公司" src="//32584018.s21i.faiusr.com/4/ABUIABAEGAAgio20tAYosuqv4gQwhQc4jwI.png" />
+                    }} title="深圳市智源空间创新科技有限公司" alt="深圳市智源空间创新科技有限公司" src={logoSrc} />
             </NavLink>
         </div>
     );
