@@ -3,23 +3,254 @@ import { NavigatorItem1 } from "./NavigatorItem/NavigatorItem1"
 import { NavigatorItem2 } from "./NavigatorItem/NavigatorItem2"
 
 export function NavigatorRight1() {
-    const NavigatorItem1Content1 = {
+    const NavigatorItem2Content1 = {
         title: '产品中心',
         href: '/product',
         content:
-            [{ name: '企业介绍', id: 0, href: '' },
-            { name: '变形监测', id: 1, href: '' },
-            { name: '压力监测', id: 2, href: '' },
-            { name: '水位监测', id: 3, href: '' },
-            { name: '流量监测', id: 4, href: '' },
-            { name: '环境量监测', id: 5, href: '' },
-            { name: '排水管网检测', id: 6, href: '' },
-            { name: '水工隧道检测', id: 7, href: '' },
-            { name: '数据采集系列', id: 8, href: '' },
-            { name: '系统平台', id: 9, href: '' }
-            ]
+            [{
+                name: '变形监测',
+                href: '',
+                content: [{
+                    name: '大坝内部变形监测机器人',
+                    href: '',
+                },
+                {
+                    name: '惯性视觉测量仪',
+                    href: ''
+                },
+                {
+                    name: '普适性GNSS\\北斗接收机',
+                    href: ''
+                },
+                {
+                    name: '无人机优视自主摄影测量',
+                    href: ''
+                },
+                {
+                    name: 'SAR沉降监测',
+                    href: ''
+                },
+                {
+                    name: '阵列式位移计',
+                    href: ''
+                },
+                {
+                    name: '静力水准仪',
+                    href: ''
+                },
+                {
+                    name: '裂缝计',
+                    href: ''
+                },
+                {
+                    name: '三向测缝（位移）计',
+                    href: ''
+                },
+                {
+                    name: '电测水管式沉降仪',
+                    href: ''
+                },
+                {
+                    name: '磁致式沉降仪',
+                    href: ''
+                },
+                {
+                    name: '倾斜仪',
+                    href: ''
+                },
+                {
+                    name: '激光位移计',
+                    href: ''
+                },
+                {
+                    name: '振弦式单点位移计',
+                    href: ''
+                },
+                {
+                    name: '振弦式多点位移计',
+                    href: ''
+                },
+                {
+                    name: '表面式应变计',
+                    href: ''
+                },
+                {
+                    name: '内埋式应变计',
+                    href: ''
+                },
+                {
+                    name: '锚索计',
+                    href: ''
+                },
+                {
+                    name: '钢筋计',
+                    href: ''
+                },
+                {
+                    name: '轴力计',
+                    href: ''
+                }]
+            },
+            {
+                name: '压力监测',
+                href: '',
+                content: [{
+                    name: '土压力计',
+                    href: '',
+                },
+                {
+                    name: '振弦式扬压力计',
+                    href: ''
+                },
+                {
+                    name: '硅压式扬压力计',
+                    href: ''
+                },
+                {
+                    name: '振弦式渗压计',
+                    href: ''
+                }]
+            },
+            {
+                name: '水位监测',
+                href: '',
+                content: [{
+                    name: '量水堰计',
+                    href: '',
+                },
+                {
+                    name: '超声波一体式水位计',
+                    href: ''
+                },
+                {
+                    name: '浮子式水位计',
+                    href: '',
+                },
+                {
+                    name: '雷达水位计',
+                    href: ''
+                }, {
+                    name: '投入式水位计',
+                    href: '',
+                },
+                {
+                    name: '气泡式水位计',
+                    href: ''
+                }
+                ]
+            },
+            {
+                name: '流量监测',
+                href: '',
+                content: [{
+                    name: '雷达流量计',
+                    href: '',
+                },
+                {
+                    name: '超声波流量计',
+                    href: ''
+                },
+                {
+                    name: '多普勒流量计',
+                    href: ''
+                }]
+            },
+            {
+                name: '环境量监测',
+                href: '',
+                content: [{
+                    name: '雨量计',
+                    href: '',
+                },
+                {
+                    name: '机械式风速风向仪',
+                    href: ''
+                },
+                {
+                    name: '蒸发量传感器',
+                    href: ''
+                },
+                {
+                    name: '温湿度传感器',
+                    href: ''
+                }]
+            },
+            {
+                name: '环境量监测',
+                href: '',
+                content: [{
+                    name: '雨量计',
+                    href: '',
+                },
+                {
+                    name: '机械式风速风向仪',
+                    href: ''
+                },
+                {
+                    name: '蒸发量传感器',
+                    href: ''
+                },
+                {
+                    name: '温湿度传感器',
+                    href: ''
+                }]
+            },
+            {
+                name: '排水管网检测',
+                href: '',
+                content: [{
+                    name: '排水管网检测胶囊机器人',
+                    href: '',
+                }]
+            },
+            {
+                name: '水工隧洞检测',
+                href: '',
+                content: [{
+                    name: '隧洞激光检测车',
+                    href: '',
+                },
+                {
+                    name: '探地雷达',
+                    href: '',
+                }]
+            },
+            {
+                name: '数据采集系列',
+                href: '',
+                content: [{
+                    name: 'MCU多功能采集仪',
+                    href: '',
+                },
+                {
+                    name: 'RTU遥测终端机',
+                    href: '',
+                }
+                    ,
+                {
+                    name: 'DTU数据采集仪',
+                    href: '',
+                }]
+            },
+            {
+                name: '系统平台',
+                href: '',
+                content: [{
+                    name: '水库智慧化平台',
+                    href: '',
+                },
+                {
+                    name: '水利视频监控平台',
+                    href: '',
+                }
+                    ,
+                {
+                    name: '水利物联网平台',
+                    href: '',
+                }]
+            }]
     }
-    const NavigatorItem2Content = {
+    const NavigatorItem2Content2 = {
         title: '解决方案',
         href: '/solution',
         content:
@@ -122,9 +353,14 @@ export function NavigatorRight1() {
     const NavigatorItem1Content2 = {
         title: '应用案例',
         href: '/cases',
-        content: [{ name: '交通工程', id: 0, href: '' },
-        { name: '自然资源', id: 1, href: '' },
-        { name: '信息化平台', id: 2, href: '' },
+        content: [{ name: '排水管网检测', href: '' },
+        { name: '水工隧洞检测', href: '' },
+        { name: '地质雷达检测', href: '' },
+        { name: '水库大坝安全监测', href: '' },
+        { name: '大坝内部变形监测', href: '' },
+        { name: '建筑物变形监测', href: '' },
+        { name: '信息化平台开发', href: '' },
+        { name: '实景三维与数字孪生', href: '' },
         ]
     }
     const NavigatorItem1Content3 = {
@@ -147,19 +383,21 @@ export function NavigatorRight1() {
     }
     return (
         <div className="NavigatorRight1">
-            <NavigatorItem1
-                title={NavigatorItem1Content1.title}
-                content={NavigatorItem1Content1.content}
-                href={NavigatorItem1Content1.href}></NavigatorItem1>
             <NavigatorItem2
-                title={NavigatorItem2Content.title}
-                content={NavigatorItem2Content.content}
-                href={NavigatorItem2Content.href}></NavigatorItem2>
+                title={NavigatorItem2Content1.title}
+                content={NavigatorItem2Content1.content}
+                href={NavigatorItem2Content1.href}>
+            </NavigatorItem2>
+            <NavigatorItem2
+                title={NavigatorItem2Content2.title}
+                content={NavigatorItem2Content2.content}
+                href={NavigatorItem2Content2.href}>
+            </NavigatorItem2>
             <NavigatorItem1
                 title={NavigatorItem1Content2.title}
                 content={NavigatorItem1Content2.content}
-                href={NavigatorItem1Content2.href}
-            ></NavigatorItem1>
+                href={NavigatorItem1Content2.href}  >
+            </NavigatorItem1>
             <NavigatorItem1
                 title={NavigatorItem1Content3.title}
                 content={NavigatorItem1Content3.content}

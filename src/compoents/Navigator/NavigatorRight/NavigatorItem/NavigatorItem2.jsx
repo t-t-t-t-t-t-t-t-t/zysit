@@ -1,17 +1,26 @@
 import './NavigatorItem2.scss'
 import { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export function NavigatorItem2({ title, content, href }) {
+    const [isInRoute, setisInRoute] = useState(false)
     const [isShowList, setIsShowList] = useState(false)
     const [isRotate, setIsRotate] = useState(false)
     const [listPos, setListPost] = useState(0)
     const nameDom = useRef(null)
+    const location = useLocation()
+
+    // 显示哪个Item
     const [currentItem, setCurrentItem] = useState(0)
     // 初始化距离
     useEffect(() => {
         setListPost(nameDom.current.offsetHeight + 5)
     }, [])
+    useEffect(() => {
+        setisInRoute(location.pathname == href)
+    }, [location])
+
     function onHandleMouseEnterName() {
         setIsShowList(true)
         setIsRotate(true)
@@ -33,7 +42,6 @@ export function NavigatorItem2({ title, content, href }) {
         if (isShowList) {
             setIsShowList(false)
             setIsRotate(false)
-            console.log('[][]')
         }
     }
     function onHandleMouseEnterItem(index) {
@@ -48,7 +56,7 @@ export function NavigatorItem2({ title, content, href }) {
                 onMouseLeave={e => { e.stopPropagation(); onHandleMouseLeaveName() }}>
                 <span>  {title}</span>
                 <s style={{ textDecoration: 'none', rotate: isRotate ? '180deg' : '0deg', }} ></s>
-                <div className="buttonLine" style={{ width: isRotate ? '100%' : '0%' }}>
+                <div className="buttonLine" style={{ width: isInRoute || isRotate ? '100%' : '0%' }}>
                 </div>
             </NavLink>
 
@@ -57,7 +65,7 @@ export function NavigatorItem2({ title, content, href }) {
                     {content.map((item, index) => (
                         <NavLink
                             to={item.href}
-                            key={item.id} className="listItem"
+                            key={index} className="listItem"
                             style={{ cursor: isShowList ? 'pointer' : 'default' }}
                             onMouseEnter={e => { onHandleMouseEnterItem(index); }}
                         >
@@ -66,9 +74,8 @@ export function NavigatorItem2({ title, content, href }) {
                     ))}
                 </div>
                 <div className="listRight">{
-                    content[currentItem].content.map(item => (
-                        <NavLink to={item.href} className="listContentItem" key={item.id}>
-                            <i style={{ textDecoration: 'none', rotate: '-90deg' }} ></i>
+                    content[currentItem].content.map((item, index) => (
+                        <NavLink to={item.href} className="listContentItem" key={index}>
                             {item.name}
                         </NavLink>))
                 }
