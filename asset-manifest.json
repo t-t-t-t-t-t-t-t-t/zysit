@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/zysit/static/css/main.cd6caad2.css",
-    "main.js": "/zysit/static/js/main.631a1f64.js",
+    "main.css": "/zysit/static/css/main.267f5523.css",
+    "main.js": "/zysit/static/js/main.d6ce8374.js",
     "static/media/logo.png": "/zysit/static/media/logo.84c105a3e326fa8c2c0e.png",
     "index.html": "/zysit/index.html",
-    "main.cd6caad2.css.map": "/zysit/static/css/main.cd6caad2.css.map",
-    "main.631a1f64.js.map": "/zysit/static/js/main.631a1f64.js.map"
+    "main.267f5523.css.map": "/zysit/static/css/main.267f5523.css.map",
+    "main.d6ce8374.js.map": "/zysit/static/js/main.d6ce8374.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd6caad2.css",
-    "static/js/main.631a1f64.js"
+    "static/css/main.267f5523.css",
+    "static/js/main.d6ce8374.js"
   ]
 }
