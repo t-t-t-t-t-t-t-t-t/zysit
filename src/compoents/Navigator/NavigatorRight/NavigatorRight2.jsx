@@ -1,4 +1,4 @@
-import './NavigatorRight2.scss'
+import './scss/NavigatorRight2.scss'
 import phoneSrc from '../../../assets/icons/phone.png'
 export function NavigatorRight2() {
     return (

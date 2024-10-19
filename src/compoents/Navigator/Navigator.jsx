@@ -1,4 +1,4 @@
-import './Navigator.scss'
+import './scss/Navigator.scss'
 import { Logo } from './Logo'
 import { NavigatorRight } from './NavigatorRight'
 export function Navigator() {

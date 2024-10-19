@@ -1,4 +1,5 @@
-import './NavigatorItem2.scss'
+import './scss/NavigatorItem2.scss';
+
 import { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'

@@ -1,4 +1,4 @@
-import './NavigatorRight1.scss'
+import './scss/NavigatorRight1.scss'
 import { NavigatorItem1 } from "./NavigatorItem/NavigatorItem1"
 import { NavigatorItem2 } from "./NavigatorItem/NavigatorItem2"
 import { NavigatorItem3 } from "./NavigatorItem/NavigatorItem3"
