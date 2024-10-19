@@ -52,8 +52,7 @@ export function NavigatorItem1({ title,
                 <div className="buttonLine" style={{ width: isInRoute || isRotate ? '100%' : '0%' }}>
                 </div>
             </NavLink>
-
-            <div className="list" style={{ display: haveContent ? 'block' : 'none', zIndex: isShowList ? 100 : -1, opacity: isShowList ? 1 : 0, top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { e.stopPropagation(); onHandleMouseLeaveList() }}>
+            <div className="list" style={{ display: haveContent ? 'block' : 'none !important', top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { e.stopPropagation(); onHandleMouseLeaveList() }}>
                 {content.map((item, index) => (
                     <NavLink to={item.href} key={index} className="listItem" style={{ cursor: isShowList ? 'pointer' : 'default' }}>
                         <span>{item.name}</span>

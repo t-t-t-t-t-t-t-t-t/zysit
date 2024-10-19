@@ -1,0 +1,44 @@
+@import '../../../../global.scss';
+
+.NavigatorItem3 {
+    height: 100%;
+    padding: 0 15px;
+    background-color: #fff;
+    position: relative;
+
+    .link {
+        height: 100%;
+        background-color: #fff;
+        color: $navigatorFontColor;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        font-size: 16px;
+
+        cursor: pointer;
+
+        &:hover {
+            .buttonLine {
+                width: 100% !important;
+            }
+        }
+
+        .buttonLine {
+            width: 0%;
+            height: 3px;
+            display: inline-block;
+            position: absolute;
+            transition: all 0.4s;
+            background: $navigatorActiveBottmLineColor;
+
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+
+
+    }
+}

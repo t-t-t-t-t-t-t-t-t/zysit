@@ -1,7 +1,7 @@
 import './NavigatorRight1.scss'
 import { NavigatorItem1 } from "./NavigatorItem/NavigatorItem1"
 import { NavigatorItem2 } from "./NavigatorItem/NavigatorItem2"
-
+import { NavigatorItem3 } from "./NavigatorItem/NavigatorItem3"
 export function NavigatorRight1() {
     const NavigatorItem2Content1 = {
         title: '产品中心',
@@ -363,26 +363,30 @@ export function NavigatorRight1() {
         { name: '实景三维与数字孪生', href: '' },
         ]
     }
-    const NavigatorItem1Content3 = {
+    const NavigatorItem3Content1 = {
         title: '服务支持',
-        href: '/serve',
-        content: []
+        href: '/serve'
     }
-    const NavigatorItem1Content4 = {
+    const NavigatorItem3Content2 = {
         title: '新闻资讯',
-        href: '/news',
-        content: []
+        href: '/news'
     }
     const NavigatorItem1Content5 = {
         title: '关于我们',
         href: '/about',
-        content: [{ name: '公司简介', id: 0, href: '' },
-        { name: '联系我们', id: 1, href: '' },
-        { name: '人才招聘', id: 2, href: '' },
+        content: [
+            { name: '公司简介', href: '' },
+            { name: '联系我们', href: '' },
+            { name: '人才招聘', href: '' },
         ]
     }
     return (
         <div className="NavigatorRight1">
+            <NavigatorItem1
+                title={NavigatorItem1Content5.title}
+                content={NavigatorItem1Content5.content}
+                href={NavigatorItem1Content5.href}
+            ></NavigatorItem1>
             <NavigatorItem2
                 title={NavigatorItem2Content1.title}
                 content={NavigatorItem2Content1.content}
@@ -398,21 +402,9 @@ export function NavigatorRight1() {
                 content={NavigatorItem1Content2.content}
                 href={NavigatorItem1Content2.href}  >
             </NavigatorItem1>
-            <NavigatorItem1
-                title={NavigatorItem1Content3.title}
-                content={NavigatorItem1Content3.content}
-                href={NavigatorItem1Content3.href}
-            ></NavigatorItem1>
-            <NavigatorItem1
-                title={NavigatorItem1Content4.title}
-                content={NavigatorItem1Content4.content}
-                href={NavigatorItem1Content4.href}
-            ></NavigatorItem1>
-            <NavigatorItem1
-                title={NavigatorItem1Content5.title}
-                content={NavigatorItem1Content5.content}
-                href={NavigatorItem1Content5.href}
-            ></NavigatorItem1>
+            <NavigatorItem3 title={NavigatorItem3Content1.title} href={NavigatorItem3Content1.href}></NavigatorItem3>
+            <NavigatorItem3 title={NavigatorItem3Content2.title} href={NavigatorItem3Content2.href}></NavigatorItem3>
+
         </div>
     )
 }

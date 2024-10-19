@@ -33,10 +33,9 @@
         .buttonLine {
             width: 0%;
             height: 3px;
-
             display: inline-block;
             position: absolute;
-            transition: all 0.6s;
+            transition: all 0.4s;
             background: $navigatorActiveBottmLineColor;
 
             left: 50%;
@@ -48,6 +47,12 @@
 
             .buttonLine {
                 width: 100%;
+            }
+
+            &+.list {
+                display: block !important;
+                z-index: 999;
+                opacity: 1;
             }
         }
     }
@@ -62,6 +67,15 @@
         padding: 25px 0;
         box-shadow: 0 0 10px 0 #c0c0c0bb;
         transition: all 0.4s;
+        display: none !important;
+        z-index: -999;
+        opacity: 0;
+
+        &:hover {
+            display: block !important;
+            z-index: 999;
+            opacity: 1;
+        }
 
         .listItem {
             display: block;

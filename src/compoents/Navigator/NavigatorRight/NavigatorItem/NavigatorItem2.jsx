@@ -60,7 +60,7 @@ export function NavigatorItem2({ title, content, href }) {
                 </div>
             </NavLink>
 
-            <div className="list" style={{ opacity: isShowList ? 1 : 0, zIndex: isShowList ? 100 : -1, top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { onHandleMouseLeaveList() }}>
+            <div className="list" style={{ top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { onHandleMouseLeaveList() }}>
                 <div className="listLeft">
                     {content.map((item, index) => (
                         <NavLink

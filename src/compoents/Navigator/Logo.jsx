@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logoSrc from '../../assets/imgs/logo.png'
+import logoSrc from '../../assets/imgs/Navigator/logo.png'
 export function Logo() {
     return (
         <div className='Logo'
