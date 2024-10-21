@@ -1,0 +1,80 @@
+.Part1 {
+    $height: 80px;
+    height: $height;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20px;
+
+    .Part1Wrap {
+        @include globalWidth();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: $height;
+
+        .left {
+            height: $height;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .phoneNumWrap {
+                .phoneNum {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: $navigatorActiveFontColor;
+                }
+
+                .time {
+                    color: $textFontColor;
+                    font-size: 14px;
+                    margin-top: 7px;
+                }
+            }
+
+            .position {
+                margin-left: 35px;
+
+                .title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $fontColor;
+                }
+
+                .content {
+                    color: $textFontColor;
+                    font-size: 14px;
+                    margin-top: 7px;
+                }
+            }
+        }
+
+        .right {
+            height: $height;
+            display: flex;
+            align-items: center;
+
+            .text {
+                font-size: 14px;
+                margin-left: 15px;
+
+                .title {
+                    font-weight: 700;
+                }
+
+                .content {
+                    margin-top: 12px;
+                    color: $textFontColor;
+                }
+            }
+
+            .img {
+                height: 80px;
+                width: 80px;
+                background-color: blue;
+            }
+        }
+    }
+}

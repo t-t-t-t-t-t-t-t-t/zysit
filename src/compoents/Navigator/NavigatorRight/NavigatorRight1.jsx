@@ -372,7 +372,7 @@ export function NavigatorRight1() {
         href: '/news'
     }
     const NavigatorItem1Content5 = {
-        title: '关于我们',
+        title: '关于智源',
         href: '/about',
         content: [
             { name: '公司简介', href: '' },

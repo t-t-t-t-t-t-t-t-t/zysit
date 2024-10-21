@@ -1,0 +1,41 @@
+.Part2 {
+    $height: 90px;
+    height: $height;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #fff;
+
+    .Part2Wrap {
+        @include globalWidth();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: $height;
+        border-top: 1px solid rgb(230, 230, 230);
+
+        .NavigatorBottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: $height;
+
+
+            .link {
+                line-height: height;
+                padding: 0 15px;
+                background-color: #fff;
+                color: $fontColor;
+                font-size: 14px;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+
+                &:hover {
+                    color: $navigatorActiveFontColor;
+
+                }
+            }
+        }
+    }
+}

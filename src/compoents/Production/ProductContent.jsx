@@ -1,21 +1,51 @@
+
+import img11 from '../../assets/imgs/Production/ProductionItem/item1/INSAR沉降监测.jpg'
+import img12 from '../../assets/imgs/Production/ProductionItem/item1/表面式应变计.jpg'
+import img13 from '../../assets/imgs/Production/ProductionItem/item1/磁致式沉降仪.jpg'
+import img14 from '../../assets/imgs/Production/ProductionItem/item1/大坝内部变形监测机器人.jpg'
+import img15 from '../../assets/imgs/Production/ProductionItem/item1/导轮式固定测斜仪.jpg'
+import img16 from '../../assets/imgs/Production/ProductionItem/item1/电测水管式沉降仪.jpg'
+import img17 from '../../assets/imgs/Production/ProductionItem/item1/钢筋计.jpg'
+import img18 from '../../assets/imgs/Production/ProductionItem/item1/惯性视觉测量仪.jpg'
+import img19 from '../../assets/imgs/Production/ProductionItem/item1/激光位移计.jpg'
+import img110 from '../../assets/imgs/Production/ProductionItem/item1/静力水准仪.jpg'
+import img111 from '../../assets/imgs/Production/ProductionItem/item1/裂缝计.jpg'
+import img112 from '../../assets/imgs/Production/ProductionItem/item1/锚索计.jpg'
+import img113 from '../../assets/imgs/Production/ProductionItem/item1/内埋式应变计.jpg'
+import img114 from '../../assets/imgs/Production/ProductionItem/item1/普适性GNSS北斗接收机.jpg'
+import img115 from '../../assets/imgs/Production/ProductionItem/item1/倾斜仪.jpg'
+import img116 from '../../assets/imgs/Production/ProductionItem/item1/三向测缝（位移）计.jpg'
+import img117 from '../../assets/imgs/Production/ProductionItem/item1/无人机优视自主摄影测量.jpg'
+import img118 from '../../assets/imgs/Production/ProductionItem/item1/阵列位移计.jpg'
+import img119 from '../../assets/imgs/Production/ProductionItem/item1/振弦式单点位移计.jpg'
+import img120 from '../../assets/imgs/Production/ProductionItem/item1/振弦式多点位移计.jpg'
+import img121 from '../../assets/imgs/Production/ProductionItem/item1/轴力计.jpg'
+
 import img21 from '../../assets/imgs/Production/ProductionItem/item2/硅压式扬压力计.jpg'
 import img22 from '../../assets/imgs/Production/ProductionItem/item2/土压力计.jpg'
 import img23 from '../../assets/imgs/Production/ProductionItem/item2/振弦式渗压计.jpg'
 import img24 from '../../assets/imgs/Production/ProductionItem/item2/振弦式扬压力计.jpg'
+
 import img31 from '../../assets/imgs/Production/ProductionItem/item3/超声波一体式水位计.jpg'
 import img32 from '../../assets/imgs/Production/ProductionItem/item3/浮子式水位计.jpg'
 import img33 from '../../assets/imgs/Production/ProductionItem/item3/雷达水位计.jpg'
 import img34 from '../../assets/imgs/Production/ProductionItem/item3/量水堰计.jpg'
 import img35 from '../../assets/imgs/Production/ProductionItem/item3/气泡式水位计.jpg'
 import img36 from '../../assets/imgs/Production/ProductionItem/item3/投入式水位计.jpg'
+
 import img41 from '../../assets/imgs/Production/ProductionItem/item4/超声波流量计.jpg'
 import img42 from '../../assets/imgs/Production/ProductionItem/item4/多普勒流量计.jpg'
 import img43 from '../../assets/imgs/Production/ProductionItem/item4/雷达流量计.jpg'
+
 import img51 from '../../assets/imgs/Production/ProductionItem/item5/机械式风速风向仪.jpg'
 import img52 from '../../assets/imgs/Production/ProductionItem/item5/温湿度传感器.jpg'
 import img53 from '../../assets/imgs/Production/ProductionItem/item5/雨量计.jpg'
 import img54 from '../../assets/imgs/Production/ProductionItem/item5/蒸发量传感器.jpg'
+
 import img61 from '../../assets/imgs/Production/ProductionItem/item6/排水管网检测胶囊机器人.jpg'
+
+import img71 from '../../assets/imgs/Production/ProductionItem/item7/隧洞激光检测车.jpg'
+import img72 from '../../assets/imgs/Production/ProductionItem/item7/探地雷达.jpg'
 
 import img81 from '../../assets/imgs/Production/ProductionItem/item8/DTU数据采集仪.jpg'
 import img82 from '../../assets/imgs/Production/ProductionItem/item8/MCU多功能采集仪.jpg'
@@ -27,7 +57,194 @@ import img93 from '../../assets/imgs/Production/ProductionItem/item9/水利物�
 
 export const itemList = ['变形监测', '压力监测', '水位监测', '流量监测', '环境量监测', '排水管网检测', '水工隧洞检测', '数据采集系列', '系统平台']
 export const SiderBarContent = [
-    [],
+    [
+        {
+            title: 'INSAR沉降监测',
+            content: `全天时全天候
+24 小时连续监测，适应各类气候条件
+非接触式测量
+大范围远程扫描，无需按照任何定标物
+高时效性
+秒级电子扫描监测，最快每10秒获取一幅观测场景位移图像
+超高精度
+亚毫米级位移监测精度
+高可靠性
+先进的 MIMO( 多入多出 ) 一体化设计，避免机械故障`,
+            cardImg: img11,
+            isNew: true,
+            isHot: true
+        }, {
+            title: '表面式应变计',
+            content: `1.高性能、信号强度强
+            2.高颜值、全不锈钢外壳，抗压抗摔抗拧
+            3.耐水压高，防水性能优异
+            4.内置温度计，可以温度补偿提高准确性
+            5.内置参数芯片，可读取编号、计算参数`,
+            cardImg: img12,
+            isNew: true,
+            isHot: true
+        }, {
+            title: '磁致式沉降仪',
+            content: `磁致式沉降仪采用的磁致伸缩式传感器具有分辨率高、稳定性好、性能可靠、响应速度快、工作寿命长、线性测量、绝对量输出、非接触测量、永不磨损、自标定，输出信号RS485数字量，安装简单方便等性能`,
+            cardImg: img13,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '大坝内部变形监测机器人',
+            content: `机器人具有大范围、高密度、高精度、易维护等技术优势
+可以同时测量水平、垂直和挠度三种大坝内部形变参数，实现对坝体整体连续变形的长期稳定有效观测`,
+            cardImg: img14,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '导轮式固定测斜仪',
+            content: `1.杆式测斜仪
+2.精度±0.01°
+3.量程±30°
+4.稳定性好
+5.带温度芯片
+6.防水性能优异
+7.可靠性高
+8.信号稳定`,
+            cardImg: img15,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '电测水管式沉降仪',
+            content: `传感器采集精度高。
+传感器采用全金属结构，防水、防腐性能强。
+信号传输方式为RS48传输，信号稳定性好，传输距离远，真正达到自动化测量方式。`,
+            cardImg: img16,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '钢筋计',
+            content: `1.高性能、信号强度强
+            2.高颜值、全不锈钢外壳，抗压抗摔抗拧
+            3.耐水压高，防水性能优异
+            4.内置热敏电阻温度计，可以同步测量温度
+            5.内置参数芯片，可读取编号、计算参数`,
+            cardImg: img17,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '惯性视觉测量仪',
+            content: `采用非接触式测量，实现现场快速布设。
+采用边缘计算技术，降低算力与数据传输成本。垂直与水平位移的动静态一体测量。
+内置AI图像质量增强与温度补偿算法支持全天候稳定监测。
+设备可自动回传异常情况时的现场图片或视频，杜绝误报警。`,
+            cardImg: img18,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '激光位移计',
+            content: `激光位移计测量精度高、稳定性好、抗干扰能力强、没有温漂和时漂的影响，非接触测量，永不磨损，输出信号多种选择(RS485、电流)，安装简单方便`,
+            cardImg: img19,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '静力水准仪',
+            content: `分辨率高、稳定性好、性能可靠、响应速度快、工作寿命长、线性测量、绝对量输出、非接触测量、永不磨损、输出信号RS485数字量，安装简单方便等性能`,
+            cardImg: img110,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '裂缝计',
+            content: `1.高性能、信号强度强
+            2.高颜值、全不锈钢外壳，抗压抗摔抗拧
+            3.耐水压高，防水性能优异
+            4.内置温度计，可以温度补偿提高准确性
+            5.内置参数芯片，可读取编号、计算参数`,
+            cardImg: img111,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '锚索计',
+            content: `采用振弦理论设计、全不锈钢结构制造；
+具有灵敏度与精度高、线性与稳定性好等优点；
+对集中载荷反应灵敏、测值可靠和稳定性好；
+支持增加温度检测功能；`,
+            cardImg: img112,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '内埋式应变计',
+            content: `1.高性能、信号强度强
+            2.高颜值、全不锈钢外壳，抗压抗摔抗拧
+            3.耐水压高，防水性能优异
+            4.内置温度计，可以温度补偿提高准确性
+            5.内置参数芯片，可读取编号、计算参数`,
+            cardImg: img113,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '普适性GNSS\\北斗接收机',
+            content: `监测精度：水平位移：2.5mm+0.5ppm，高程位移：5mm+0.5ppm；
+简约设计：一体化集成设计，简约配套、便捷安装，IP68防
+ 通讯方式：支持4G、NB-IOT/WIFI、蓝牙；
+传感集成：支持通过MEMS触发RTK功能，可为485协议的传感器供电供网；`,
+            cardImg: img114,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '倾斜仪',
+            content: `全不锈钢结构，坚固耐用，附有调节和固定支架方便安装。倾斜仪采用的是高精度MEMS传感器，可靠性好，稳定速度快，安装附件少，组装方便，输出信号为RS485数字量，直接显示工程值(位移或角度)，同步测量埋设点的温度。      
+倾斜仪全不锈钢结构、抗冲击、接地防雷、测值稳定、长期工作在水下。
+倾斜仪测量系统能识别信息、智能故障诊断、云平台手机无缝对接。`,
+            cardImg: img115,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '三向测缝（位移）计',
+            content: `三向测量能力，高精度和高灵敏度，实时数据采集与分析，适应多种环境和条件`,
+            cardImg: img116,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '无人机优视自主摄影测量',
+            content: `1.基于视角优选的无人机航测路线自动生成
+2.基于模型采样的大比例尺航测像控布设推荐
+3.基于航线划分的多无人机协同航测作业
+4.基于高分辨率成像系统的复杂场景精细三维重建
+5.基于场景环境中禁飞区设置的无人机低飞安全保障`,
+            cardImg: img117,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '阵列式位移计',
+            content: `温区补偿/数据稳定
+ 方向准确/精度可靠
+偏量修正/扭转校正
+在线传输/实时分析
+二次开发/平台兼容`,
+            cardImg: img118,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '振弦式单点位移计',
+            content: `振弦式位移计有温度自动补偿功能，温度修正系数小于最小读数，使用中不需要温度修正。单点位移计全不锈钢结构、一体化设计、防旋转、防折弯、抗冲击、抗跌落、接地防雷、安装方便可靠，适应长期工作在水下。     
+单点位移计全不锈钢结构、防旋转、防折弯、抗冲击、接地防雷、适应长期工作在水下。
+单点位移计测量系统智能识别信息、智能故障诊断、云平台手机无缝对接。`,
+            cardImg: img119,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '振弦式多点位移计',
+            content: `多点位移计全不锈钢结构、一体化设计、防旋转、防折弯、抗冲击、抗跌落、接地防雷、安装方便可靠，适应长期工作在水下。
+多点位移计全不锈钢结构、防旋转、防折弯、抗冲击、接地防雷、适应长期工作在水下。
+多点位移计测量系统智能识别信息、智能故障诊断、云平台手机无缝对接。 `,
+            cardImg: img120,
+            isNew: false,
+            isHot: false
+        }, {
+            title: '轴力计',
+            content: `1.传感器分辨力高、抗干扰性能强；
+2.对集中载荷反应灵敏、测值可靠和稳定性好；
+3.支持增加温度检测功能；`,
+            cardImg: img121,
+            isNew: false,
+            isHot: false
+        },],
     [{
         title: '硅压式扬压力计',
         content: `采用进口硅压机芯、全不锈钢结构，24×128mm的灵巧体积，可方便的放置在含1英寸以上的测压管内。 跟踪式渗压计为智能传感器，输出信号为物理量并温度、气压自动补偿，同步测量布设点的温度。
@@ -211,7 +428,22 @@ export const SiderBarContent = [
         isNew: true,
         isHot: true
     },],
-    [],
+    [{
+        title: '隧洞激光检测车',
+        content: `运用高精度三维点云快速获取和精密测量技术，全面检测输水隧洞表面病害，自动识别和定量分析病害并研判病害发生与发展的变化趋势
+可实现病害的识别、定位、量测、分类、智能统计分析等多功能一体化，检测效率高、漏检率低，成果客观准确`,
+        cardImg: img71,
+        isNew: true,
+        isHot: true
+    },
+    {
+        title: '探地雷达',
+        content: `基于实时采样技术高速AD,超高采样率长距离WIFI传输， 摆脱
+线缆束缚，减少战障率具有大深度探测能力信噪比高，数据干净干扰极少`,
+        cardImg: img72,
+        isNew: false,
+        isHot: false
+    }],
     [{
         title: 'DTU数据采集仪',
         content: `采用高性能的工业级位通信处理器和工业级无线模块
@@ -233,8 +465,7 @@ export const SiderBarContent = [
         cardImg: img82,
         isNew: false,
         isHot: false
-    }
-        , {
+    }, {
         title: 'RTU遥测终端机',
         content: `雨量触发采集
 定时数据采集、存储及上报
