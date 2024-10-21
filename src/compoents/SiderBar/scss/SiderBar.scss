@@ -1,0 +1,111 @@
+.SiderBar {
+    width: 100%;
+
+    .SiderBarWrap {
+        @include globalWidth();
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .SiderBarLeft {
+            width: 206px;
+            box-sizing: border-box;
+            background-color: #fff;
+            padding: 20px 0;
+            border-radius: 5px;
+
+            .SiderBarItem {
+                $transitionTime: .7s;
+                $itemHeight: 48px;
+                height: $itemHeight ;
+                line-height: $itemHeight ;
+                width: 100%;
+                padding: 0 20px 0 28px;
+                box-sizing: border-box;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: all $transitionTime;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 3px;
+                    height: 0%;
+                    border-radius: 2px;
+                    background-color: $navigatorActiveBottmLineColor;
+                    transition: all .4s;
+                }
+
+                &.active {
+                    background-color: $navigatorActiveBgColor;
+                    transition: all $transitionTime;
+
+                    &::before {
+                        height: 100%;
+                    }
+
+                    .text {
+                        color: $navigatorActiveBottmLineColor ;
+                    }
+
+                    .icon {
+                        opacity: 1;
+                        left: 0;
+                    }
+                }
+
+                &:hover {
+                    background-color: $navigatorActiveBgColor;
+                    transition: all $transitionTime;
+
+                    &::before {
+                        height: 100%;
+                    }
+
+                    .text {
+                        color: $navigatorActiveBottmLineColor ;
+                    }
+
+                    .icon {
+                        opacity: 1;
+                        left: 0;
+                    }
+                }
+
+                .text {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $fontColor;
+                }
+
+                .icon {
+                    $iconSize: 10px;
+                    $border: 3px solid $navigatorActiveBottmLineColor;
+                    height: $iconSize;
+                    width: $iconSize;
+                    box-sizing: border-box;
+                    border-top: $border;
+                    border-right: $border;
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    transition: all $transitionTime;
+                    position: relative;
+                    left: -10px;
+                }
+            }
+        }
+
+        .SiderBarRight {
+            width: 910px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

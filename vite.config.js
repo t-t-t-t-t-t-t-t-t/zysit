@@ -10,7 +10,13 @@ export default defineConfig(() => {
         base: './',
         plugins: [react(), nodePolyfills],
         server: {
-
+        },
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: "@import '/src/global.scss';"
+                }
+            }
         }
     };
 });
