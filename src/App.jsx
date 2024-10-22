@@ -7,7 +7,7 @@ import { News } from "./pages/News/News";
 import { Production } from "./pages/Production/Production";
 import { Serve } from "./pages/Serve/Serve";
 import { Solution } from "./pages/Solution/solution";
-
+import { ProductionDetail } from "./pages/ProductionDetail/ProductionDetail";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
           <Route path="/cases" Component={Cases}></Route>
           <Route path="/news" Component={News}></Route>
           <Route path="/product" Component={Production}></Route>
+          <Route path="/productDetail" Component={ProductionDetail}></Route>
           <Route path="/serve" Component={Serve}></Route>
           <Route path="/solution" Component={Solution}></Route>
         </Routes>

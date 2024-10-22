@@ -1,5 +1,4 @@
 import { Banner2 } from "../../compoents/Banner/Banner2"
-import { useState } from 'react'
 import ProductionBannerSrc from '../../assets/imgs/Production/Production_banner.jpg'
 import { ProductionSiderBar } from "../../compoents/Production/ProductionSiderBar"
 import { HelpBar } from "../../compoents/HelpBar/HelpBar"

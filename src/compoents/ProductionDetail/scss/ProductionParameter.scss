@@ -1,0 +1,125 @@
+@mixin labelValue {
+    $labelPadding: 50px;
+    $valuePadding: 90px;
+    $labelWidth: 20%;
+    $valueWidth: 100 - $labelWidth;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d8db;
+
+    .label {
+        width: $labelWidth ;
+        padding-left: $labelPadding;
+        border-right: 1px solid #d5d8db;
+    }
+
+    .value {
+        width: $valueWidth;
+        padding-left: $valuePadding;
+    }
+}
+
+.ProductionParameter {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    margin-top: 50px;
+    padding-top: 50px;
+
+    .ProductionParameterWrap {
+        @include globalWidth();
+
+        .title {
+            font-size: 36px;
+            color: $fontColor;
+            font-weight: 700;
+        }
+
+        .content {
+            margin-top: 50px;
+            width: 100%;
+
+
+            .head {
+                @include labelValue();
+                $headHeight: 52px;
+                height: $headHeight;
+                line-height: $headHeight;
+                background-color: #ebeff2;
+
+                .label {
+                    color: $fontColor;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                .value {
+                    color: $fontColor;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .item {
+            @include labelValue();
+            $height: 70px;
+            height: $height;
+            line-height: $height;
+            transition: all .5s;
+
+            &:nth-child(odd) {
+                background-color: #fafbfc;
+            }
+
+            .label {
+                color: $textFontColor;
+                font-size: 16px;
+            }
+
+            .value {
+                color: $textFontColor;
+                font-size: 16px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background-color: #bdc4d2;
+                    width: 5px;
+                    height: 2px;
+                    border-radius: 4px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateX(-50%);
+                    left: 70px;
+                    transition: all .5s;
+                }
+            }
+
+            &:hover {
+                background-color: $navigatorActiveBottmLineColor;
+                transition: all .2s;
+
+                .label {
+                    color: $textFontColor;
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+                .value {
+                    color: $textFontColor;
+                    font-size: 16px;
+                    color: #fff;
+
+                    &::before {
+                        width: 10px;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

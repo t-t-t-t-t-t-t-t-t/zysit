@@ -1,6 +1,6 @@
 import './scss/ProductionCard.scss'
 import CardItemSrc from '../../assets/imgs/Production/ProductionItem/item3/气泡式水位计.jpg';
-
+import { NavLink } from 'react-router-dom';
 export function ProductionCard({ title = '气泡式水位计', content = `1、内部集成嵌入式实时操作系统，监测到错误可自动重启
 2、超高精度，全温度补偿，线性补偿，抗干扰、防雷设计
 3、零点和基础高程可自由设置
@@ -14,7 +14,7 @@ export function ProductionCard({ title = '气泡式水位计', content = `1、�
 12、兼容市场上常见厂家的水位采集协议，以便于兼容RTU设备` , cardImg = CardItemSrc, isNew = true, isHot = true }) {
 
     return (
-        <div className="ProductionCard">
+        <NavLink to={`/productDetail?name=${title}`} className="ProductionCard">
             <s className='New' style={{ display: isNew ? 'block' : 'none', textDecoration: 'none' }}>新品推荐</s>
             <div className="ProductionCardWrap">
                 <div className="imgWrap">
@@ -23,6 +23,6 @@ export function ProductionCard({ title = '气泡式水位计', content = `1、�
                 <div className="title"> <div className='text'>{title}</div><s style={{ display: isHot ? 'block' : 'none', textDecoration: 'none' }} className='Hot'>HOT</s></div>
                 <div className="content"> {content} </div>
             </div>
-        </div>
+        </NavLink>
     )
 }

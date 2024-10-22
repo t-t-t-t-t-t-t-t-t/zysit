@@ -582,7 +582,7 @@ export const SiderBarContent = [
         content: `具有断电记忆功能、抗强电磁干扰，无温度、零点漂移`,
         cardImg: img32,
         isNew: true,
-        isHot: toHaveFormValues,
+        isHot: true,
         parameters: [
             { label: '测量范围', content: '0-40m' },
             { label: '最大水位变率', content: '60cm/min' },
@@ -1056,3 +1056,12 @@ export const SiderBarContent = [
         ], scene: ['水库大坝', '水工隧洞', '河道', '排水管网']
     },]
 ]
+export function getProductionByName(name) {
+    for (let i = 0; i < SiderBarContent.length; i++) {
+        for (let j = 0; j < SiderBarContent[i].length; j++) {
+            if (SiderBarContent[i][j].title == name) {
+                return SiderBarContent[i][j];
+            }
+        }
+    }
+}
