@@ -9,244 +9,244 @@ export function NavigatorRight1() {
         content:
             [{
                 name: '变形监测',
-                href: '',
+                href: '/product?idx=0',
                 content: [{
                     name: '大坝内部变形监测机器人',
-                    href: '',
+                    href: '/productDetail?name=大坝内部变形监测机器人',
                 },
                 {
                     name: '惯性视觉测量仪',
-                    href: ''
+                    href: '/productDetail?name=惯性视觉测量仪',
                 },
                 {
                     name: '普适性GNSS\\北斗接收机',
-                    href: ''
+                    href: '/productDetail?name=普适性GNSS\\北斗接收机',
                 },
                 {
                     name: '无人机优视自主摄影测量',
-                    href: ''
+                    href: '/productDetail?name=无人机优视自主摄影测量',
                 },
                 {
                     name: 'SAR沉降监测',
-                    href: ''
+                    href: '/productDetail?name=SAR沉降监测',
                 },
                 {
                     name: '阵列式位移计',
-                    href: ''
+                    href: '/productDetail?name=阵列式位移计',
                 },
                 {
                     name: '静力水准仪',
-                    href: ''
+                    href: '/productDetail?name=静力水准仪',
                 },
                 {
                     name: '裂缝计',
-                    href: ''
+                    href: '/productDetail?name=裂缝计',
                 },
                 {
                     name: '三向测缝（位移）计',
-                    href: ''
+                    href: '/productDetail?name=三向测缝（位移）计',
                 },
                 {
                     name: '电测水管式沉降仪',
-                    href: ''
+                    href: '/productDetail?name=电测水管式沉降仪',
                 },
                 {
                     name: '磁致式沉降仪',
-                    href: ''
+                    href: '/productDetail?name=磁致式沉降仪',
                 },
                 {
                     name: '倾斜仪',
-                    href: ''
+                    href: '/productDetail?name=倾斜仪',
                 },
                 {
                     name: '激光位移计',
-                    href: ''
+                    href: '/productDetail?name=激光位移计',
                 },
                 {
                     name: '振弦式单点位移计',
-                    href: ''
+                    href: '/productDetail?name=振弦式单点位移计',
                 },
                 {
                     name: '振弦式多点位移计',
-                    href: ''
+                    href: '/productDetail?name=振弦式多点位移计',
                 },
                 {
                     name: '表面式应变计',
-                    href: ''
+                    href: '/productDetail?name=表面式应变计'
                 },
                 {
                     name: '内埋式应变计',
-                    href: ''
+                    href: '/productDetail?name=内埋式应变计'
                 },
                 {
                     name: '锚索计',
-                    href: ''
+                    href: '/productDetail?name=锚索计'
                 },
                 {
                     name: '钢筋计',
-                    href: ''
+                    href: '/productDetail?name=钢筋计'
                 },
                 {
                     name: '轴力计',
-                    href: ''
+                    href: '/productDetail?name=轴力计'
                 }]
             },
             {
                 name: '压力监测',
-                href: '',
+                href: '/product?idx=1',
                 content: [{
                     name: '土压力计',
-                    href: '',
+                    href: '/productDetail?name=土压力计',
                 },
                 {
                     name: '振弦式扬压力计',
-                    href: ''
+                    href: '/productDetail?name=振弦式扬压力计'
                 },
                 {
                     name: '硅压式扬压力计',
-                    href: ''
+                    href: '/productDetail?name=硅压式扬压力计'
                 },
                 {
                     name: '振弦式渗压计',
-                    href: ''
+                    href: '/productDetail?name=振弦式渗压计'
                 }]
             },
             {
                 name: '水位监测',
-                href: '',
+                href: '/product?idx=2',
                 content: [{
                     name: '量水堰计',
-                    href: '',
+                    href: '/productDetail?name=量水堰计',
                 },
                 {
                     name: '超声波一体式水位计',
-                    href: ''
+                    href: '/productDetail?name=超声波一体式水位计'
                 },
                 {
                     name: '浮子式水位计',
-                    href: '',
+                    href: '/productDetail?name=浮子式水位计',
                 },
                 {
                     name: '雷达水位计',
-                    href: ''
+                    href: '/productDetail?name=雷达水位计'
                 }, {
                     name: '投入式水位计',
-                    href: '',
+                    href: '/productDetail?name=投入式水位计',
                 },
                 {
                     name: '气泡式水位计',
-                    href: ''
+                    href: '/productDetail?name=气泡式水位计'
                 }
                 ]
             },
             {
                 name: '流量监测',
-                href: '',
+                href: '/product?idx=3',
                 content: [{
                     name: '雷达流量计',
-                    href: '',
+                    href: '/productDetail?name=雷达流量计',
                 },
                 {
                     name: '超声波流量计',
-                    href: ''
+                    href: '/productDetail?name=超声波流量计'
                 },
                 {
                     name: '多普勒流量计',
-                    href: ''
+                    href: '/productDetail?name=多普勒流量计'
                 }]
             },
             {
                 name: '环境量监测',
-                href: '',
+                href: '/product?idx=3',
                 content: [{
                     name: '雨量计',
-                    href: '',
+                    href: '/productDetail?name=雨量计',
                 },
                 {
                     name: '机械式风速风向仪',
-                    href: ''
+                    href: '/productDetail?name=机械式风速风向仪'
                 },
                 {
                     name: '蒸发量传感器',
-                    href: ''
+                    href: '/productDetail?name=蒸发量传感器'
                 },
                 {
                     name: '温湿度传感器',
-                    href: ''
+                    href: '/productDetail?name=温湿度传感器'
                 }]
             },
             {
                 name: '环境量监测',
-                href: '',
+                href: '/product?idx=4',
                 content: [{
                     name: '雨量计',
-                    href: '',
+                    href: '/productDetail?name=雨量计',
                 },
                 {
                     name: '机械式风速风向仪',
-                    href: ''
+                    href: '/productDetail?name=机械式风速风向仪'
                 },
                 {
                     name: '蒸发量传感器',
-                    href: ''
+                    href: '/productDetail?name=蒸发量传感器'
                 },
                 {
                     name: '温湿度传感器',
-                    href: ''
+                    href: '/productDetail?name=温湿度传感器'
                 }]
             },
             {
                 name: '排水管网检测',
-                href: '',
+                href: '/product?idx=5',
                 content: [{
                     name: '排水管网检测胶囊机器人',
-                    href: '',
+                    href: '/productDetail?name=排水管网检测胶囊机器人',
                 }]
             },
             {
                 name: '水工隧洞检测',
-                href: '',
+                href: '/product?idx=6',
                 content: [{
                     name: '隧洞激光检测车',
-                    href: '',
+                    href: '/productDetail?name=隧洞激光检测车',
                 },
                 {
                     name: '探地雷达',
-                    href: '',
+                    href: '/productDetail?name=探地雷达',
                 }]
             },
             {
                 name: '数据采集系列',
-                href: '',
+                href: '/product?idx=7',
                 content: [{
                     name: 'MCU多功能采集仪',
-                    href: '',
+                    href: '/productDetail?name=MCU多功能采集仪',
                 },
                 {
                     name: 'RTU遥测终端机',
-                    href: '',
+                    href: '/productDetail?name=RTU遥测终端机',
                 }
                     ,
                 {
                     name: 'DTU数据采集仪',
-                    href: '',
+                    href: '/productDetail?name=DTU数据采集仪',
                 }]
             },
             {
                 name: '系统平台',
-                href: '',
+                href: '/product?idx=8',
                 content: [{
                     name: '水库智慧化平台',
-                    href: '',
+                    href: '/productDetail?name=水库智慧化平台',
                 },
                 {
                     name: '水利视频监控平台',
-                    href: '',
+                    href: '/productDetail?name=水利视频监控平台',
                 }
                     ,
                 {
                     name: '水利物联网平台',
-                    href: '',
+                    href: '/productDetail?name=水利物联网平台',
                 }]
             }]
     }

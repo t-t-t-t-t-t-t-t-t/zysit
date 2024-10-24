@@ -1,0 +1,43 @@
+.ProductionSwiperItem {
+    $height: 260px;
+    $width: 280px;
+    width: $width;
+    position: relative;
+
+    .imgWrap {
+        height: 180px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+
+        .img {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .textWrap {
+        margin-top: 25px;
+
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            color: $fontColor;
+        }
+
+        .content {
+            margin-top: 12px;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            color: $textFontColor ;
+        }
+    }
+}

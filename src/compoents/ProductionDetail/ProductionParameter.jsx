@@ -16,7 +16,7 @@ export function ProductionParameter({ parameter }) {
                                 {item.label}
                             </div>
                             <div className="value">
-                                {'- ' + item.content}
+                                {item.content}
                             </div>
                         </div>
                     ))}

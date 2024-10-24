@@ -1,5 +1,5 @@
 import './scss/Part1.scss'
-
+import QRcode from '../../../assets/imgs/ButtomBar/QRcode.jpg'
 export function Part1() {
     return (
         <div className="Part1">
@@ -19,7 +19,9 @@ export function Part1() {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="img"></div>
+                    <div className="imgWrap">
+                        <img className='img' src={QRcode} alt="" />
+                    </div>
                     <div className="text">
                         <div className="title">关注公众号</div>
                         <div className="content">智源空间科技</div>

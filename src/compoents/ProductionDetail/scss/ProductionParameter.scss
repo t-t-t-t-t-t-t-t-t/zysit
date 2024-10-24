@@ -34,6 +34,7 @@
             font-size: 36px;
             color: $fontColor;
             font-weight: 700;
+            animation: fadeInUP .5s ease-in .6s;
         }
 
         .content {
@@ -67,6 +68,7 @@
             height: $height;
             line-height: $height;
             transition: all .5s;
+            transition-delay: .05s;
 
             &:nth-child(odd) {
                 background-color: #fafbfc;
@@ -93,7 +95,7 @@
                     top: 50%;
                     transform: translateX(-50%);
                     left: 70px;
-                    transition: all .5s;
+                    transition: .1s;
                 }
             }
 
