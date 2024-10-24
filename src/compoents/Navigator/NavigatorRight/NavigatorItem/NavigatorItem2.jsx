@@ -20,6 +20,9 @@ export function NavigatorItem2({ title, content, href }) {
     }, [])
     useEffect(() => {
         setisInRoute(location.pathname == href)
+        if (href == '/product' && location.pathname == '/productDetail') {
+            setisInRoute(true)
+        }
     }, [location])
 
     function onHandleMouseEnterName() {
