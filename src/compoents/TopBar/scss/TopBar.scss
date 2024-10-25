@@ -1,0 +1,38 @@
+.TopBar {
+    width: 100%;
+    position: relative;
+
+    .TopBarWrap {
+        @include globalWidth();
+
+        .topContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ebeff2;
+            padding: 15px 30px;
+
+            .item {
+                transition: all .5s;
+                color: $fontColor;
+                cursor: pointer;
+
+                &.active {
+                    color: $navigatorActiveFontColor;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    color: $navigatorActiveFontColor;
+                }
+            }
+
+        }
+
+        .bottomContent {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+    }
+}

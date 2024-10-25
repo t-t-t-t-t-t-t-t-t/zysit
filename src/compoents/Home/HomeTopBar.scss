@@ -1,0 +1,20 @@
+.HomeTopBar {
+    margin-top: 80px;
+
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        color: $fontColor;
+        text-align: center;
+    }
+
+    .content {
+        font-size: 18px;
+        font-weight: 700;
+        color: $fontColor;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+}

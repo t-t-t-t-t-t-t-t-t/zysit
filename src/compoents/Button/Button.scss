@@ -1,0 +1,69 @@
+.button {
+    $buttonHeight: 46px;
+    $buttonColor: $navigatorActiveBottmLineColor ;
+    $buttonActiveColor: $navigatorActiveBottmLineColor;
+    height: $buttonHeight;
+    animation: fadeInUP .5s ease-in .6s;
+    height: $buttonHeight;
+    line-height: $buttonHeight;
+    border-radius: $buttonHeight;
+    text-align: center;
+    font-weight: 900;
+    width: 140px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    transition: all 1s;
+    cursor: pointer;
+    user-select: none;
+
+    border: 1px solid $buttonColor;
+    background-color: transparent;
+    color: $buttonColor;
+
+    &:hover {
+        border-color: $buttonActiveColor;
+        color: #fff;
+
+        &::before {
+            transform: translateX(0%);
+        }
+    }
+
+    &.type1 {
+        border-color: #fff;
+        background-color: transparent;
+        color: #fff;
+
+        &:hover {
+            border-color: $buttonActiveColor;
+        }
+    }
+
+    &.type3 {
+        border-color: #fff;
+        background-color: #fff;
+        color: $buttonActiveColor;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: $buttonHeight ;
+        background-color: $buttonActiveColor;
+        transform: translateX(-100%);
+        transition: all .7s;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

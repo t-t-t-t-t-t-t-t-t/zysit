@@ -1,6 +1,7 @@
 import './scss/Banner2.scss'
 import { useNavigate } from 'react-router-dom'
 import AboutBanerSrc from '../../assets/imgs/About/About_banner.jpg'
+import { Button } from '../Button/Button'
 export const Banner2 = ({ title = '关于智源', content = '始终践行“智能硬件驱动的安全检测场景解决方案供应商”的目标', color = "#fff", backgroundImg = AboutBanerSrc }) => {
     let navigate = useNavigate();
     return (
@@ -10,9 +11,7 @@ export const Banner2 = ({ title = '关于智源', content = '始终践行“智�
                     <div className='title'>{title}</div>
                     <div className="content">{content}</div>
                     <div className="buttonWrap">
-                        <div className="button" onClick={() => { navigate('/about') }}>
-                            了解更多
-                        </div>
+                        <Button content="了解更多" url='/about' type='1'></Button>
                     </div>
                 </div>
             </div>

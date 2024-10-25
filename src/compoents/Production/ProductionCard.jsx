@@ -11,10 +11,10 @@ export function ProductionCard({ title = '气泡式水位计', content = `1、�
 9、带有超量程报警功能和断电信息存储功能
 10、100%水质密度可调，适合全国各地各种水质高度测量
 11、超低功耗，更适合于电池系统供电
-12、兼容市场上常见厂家的水位采集协议，以便于兼容RTU设备` , cardImg = CardItemSrc, isNew = true, isHot = true }) {
+12、兼容市场上常见厂家的水位采集协议，以便于兼容RTU设备` , cardImg = CardItemSrc, isNew = true, isHot = true, marginRight = '10px' }) {
 
     return (
-        <NavLink to={`/productDetail?name=${title}`} className="ProductionCard">
+        <NavLink to={`/productDetail?name=${title}`} className="ProductionCard" style={{ marginRight: marginRight }}>
             <s className='New' style={{ display: isNew ? 'block' : 'none', textDecoration: 'none' }}>新品推荐</s>
             <div className="ProductionCardWrap">
                 <div className="imgWrap">

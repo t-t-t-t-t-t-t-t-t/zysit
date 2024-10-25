@@ -19,7 +19,7 @@ export function ProductionSwiper({ productionScene }) {
                     ]}
                     spaceBetween={50}
                     autoplay={{
-                        delay: 3000,
+                        delay: 0,
                         disableOnInteraction: false,
                     }}
                     speed={2000}
