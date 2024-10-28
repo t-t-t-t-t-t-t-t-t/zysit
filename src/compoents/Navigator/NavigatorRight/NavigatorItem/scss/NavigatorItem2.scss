@@ -60,12 +60,12 @@
         $listItemWidth: 160px;
         max-height: 60vh;
         position: absolute;
-        left: 0;
-        transform: translateX(-25%);
+        left: 50%;
+        transform: translateX(-50%);
         background-color: #fff;
         padding: 20px 0;
         box-shadow: 0 0 10px 0 #c0c0c0bb;
-        transition: all 0.4s;
+        transition: all 0.3s;
 
         display: none;
         justify-content: space-between;
