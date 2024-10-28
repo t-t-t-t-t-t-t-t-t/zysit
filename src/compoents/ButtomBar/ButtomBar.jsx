@@ -6,8 +6,8 @@ export function BottomBar() {
 
     return (
         <div className="ButtomBar">
-            <Part1></Part1>
             <Part2></Part2>
+            <Part1></Part1>
             <Part3></Part3>
         </div>
     )

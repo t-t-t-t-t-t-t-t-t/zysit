@@ -9,7 +9,7 @@ import 'swiper/css/autoplay'
 
 export function ProductionSwiper({ productionScene }) {
     return (
-        <div className="ProductionSwiper">
+        <div className="ProductionSwiper" id='3'>
             <div className="ProductionSwiperWrap">
                 <div className="mainTitle">应用场景</div>
                 <Swiper navigation

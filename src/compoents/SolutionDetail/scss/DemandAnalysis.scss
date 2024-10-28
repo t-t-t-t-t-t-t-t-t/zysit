@@ -1,0 +1,23 @@
+.DemandAnalysis {
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+
+    .DemandAnalysisWrap {
+        @include globalWidth();
+
+        .mainTitle {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .cardWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+    }
+}

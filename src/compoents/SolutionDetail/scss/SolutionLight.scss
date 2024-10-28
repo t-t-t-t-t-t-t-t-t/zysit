@@ -1,0 +1,26 @@
+.SolutionLight {
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+    margin-top: 80px;
+    background-color: #fff;
+    padding-bottom: 80px;
+
+    .SolutionLightWrap {
+        @include globalWidth();
+
+        .mainTitle {
+            font-size: 36px;
+            font-weight: 700;
+            color: $fontColor;
+            text-align: center;
+        }
+
+        .cardWrap {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+    }
+}

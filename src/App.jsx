@@ -8,6 +8,7 @@ import { Production } from "./pages/Production/Production";
 import { Serve } from "./pages/Serve/Serve";
 import { Solution } from "./pages/Solution/solution";
 import { ProductionDetail } from "./pages/ProductionDetail/ProductionDetail";
+import { SolutionDetail } from "./pages/SolutionDetail/SolutionDetail";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
           <Route path="/productDetail" Component={ProductionDetail}></Route>
           <Route path="/serve" Component={Serve}></Route>
           <Route path="/solution" Component={Solution}></Route>
+          <Route path="/solutionDetail" Component={SolutionDetail}></Route>
         </Routes>
       </div>
     </div>

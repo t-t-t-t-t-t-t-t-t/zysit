@@ -15,12 +15,12 @@ export function ProductionCard({ title = '气泡式水位计', content = `1、�
 
     return (
         <NavLink to={`/productDetail?name=${title}`} className="ProductionCard" style={{ marginRight: marginRight }}>
-            <s className='New' style={{ display: isNew ? 'block' : 'none', textDecoration: 'none' }}>新品推荐</s>
+            <div className='New' style={{ display: isNew ? 'block' : 'none', textDecoration: 'none' }}>新品推荐</div>
             <div className="ProductionCardWrap">
                 <div className="imgWrap">
                     <img className='img' src={cardImg} alt="" />
                 </div>
-                <div className="title"> <div className='text'>{title}</div><s style={{ display: isHot ? 'block' : 'none', textDecoration: 'none' }} className='Hot'>HOT</s></div>
+                <div className="title"> <div className='text'>{title}</div><div style={{ display: isHot ? 'block' : 'none', textDecoration: 'none' }} className='Hot'>HOT</div></div>
                 <div className="content"> {content} </div>
             </div>
         </NavLink>

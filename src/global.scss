@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    animation: fadeInUP .5s ease-in .6s;
 }
 
 body {

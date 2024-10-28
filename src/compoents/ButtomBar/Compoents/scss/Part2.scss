@@ -2,8 +2,9 @@
     $height: 90px;
     height: $height;
     width: 100%;
-    padding: 25px 0;
+    padding-top: 25px;
     background-color: #fff;
+    padding-top: 40px;
 
     .Part2Wrap {
         @include globalWidth();
@@ -12,7 +13,7 @@
         justify-content: space-between;
         box-sizing: border-box;
         height: $height;
-        border-top: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(230, 230, 230);
 
         .NavigatorBottom {
             display: flex;

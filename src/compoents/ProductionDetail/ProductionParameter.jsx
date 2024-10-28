@@ -2,7 +2,7 @@ import './scss/ProductionParameter.scss'
 export function ProductionParameter({ parameter }) {
 
     return (
-        <div className="ProductionParameter">
+        <div className="ProductionParameter" id='2'>
             <div className="ProductionParameterWrap">
                 <div className="title">技术参数</div>
                 <div className="content">

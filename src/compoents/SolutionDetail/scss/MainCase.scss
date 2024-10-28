@@ -1,0 +1,99 @@
+.MainCase {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #fff;
+
+    .MainCaseWrap {
+        @include globalWidth();
+
+
+        .mainTitle {
+            font-size: 36px;
+            font-weight: 700;
+            color: $fontColor;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contentWrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 432px;
+            width: 100%;
+            position: relative;
+
+            .imgWrap {
+                width: 48%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                border-radius: 10px;
+
+                .img {
+                    height: 100%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .caseList {
+                width: 48%;
+                height: 100%;
+
+                .case {
+                    background-color: #f7fafc;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    transition: all .5s;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 3px;
+                        height: 0%;
+                        background-color: $navigatorActiveBottmLineColor;
+                        transition: all .5s;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:hover {
+                        .title {
+                            color: $navigatorActiveBottmLineColor;
+                        }
+
+                        &::before {
+                            height: 100%;
+                        }
+                    }
+
+                    .title {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $fontColor;
+                    }
+
+                    .content {
+                        font-size: 16px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+
+        .buttonWrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+}
