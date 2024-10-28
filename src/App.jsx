@@ -2,6 +2,7 @@ import { Navigator } from "./compoents/Navigator/Navigator";
 import { Route, Routes } from "react-router-dom";
 import { About } from "./pages/About/About";
 import { Cases } from "./pages/Cases/Cases";
+import { CaseDetail } from "./pages/CaseDetail/CaseDetail";
 import { Home } from "./pages/Home/Home";
 import { News } from "./pages/News/News";
 import { Production } from "./pages/Production/Production";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" Component={Home}></Route>
           <Route path="/about" Component={About}></Route>
           <Route path="/cases" Component={Cases}></Route>
+          <Route path="/caseDetail" Component={CaseDetail}></Route>
           <Route path="/news" Component={News}></Route>
           <Route path="/product" Component={Production}></Route>
           <Route path="/productDetail" Component={ProductionDetail}></Route>

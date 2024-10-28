@@ -1,0 +1,23 @@
+.HonorSwiper {
+    width: 100%;
+    margin-top: 80px;
+
+    .mainTitle {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px
+    }
+
+    .swiper {
+        transition-timing-function: linear !important;
+        -webkit-transition-timing-function: linear !important;
+    }
+
+    .HonorSwiperWrap {
+        @include globalWidth();
+        background-color: #fff;
+        padding: 55px;
+        padding-bottom: 30px;
+    }
+}

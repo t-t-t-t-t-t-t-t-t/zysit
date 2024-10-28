@@ -1,0 +1,44 @@
+.CaseGuid {
+    $barHeight: 64px;
+    width: 100%;
+    height: $barHeight;
+    background-color: #fff;
+    position: relative;
+
+    .CaseGuidWrap {
+        @include globalWidth();
+        height: $barHeight;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .link {
+            height: $barHeight;
+            line-height: $barHeight;
+            color: $fontColor;
+            box-sizing: border-box;
+            position: relative;
+            transition: all .5s;
+            text-decoration: none;
+            margin: 0 15px;
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 0%;
+                height: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all .5s;
+                background-color: $navigatorActiveBottmLineColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.CaseCard {
+    width: 380px;
+    height: 348px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+
+    &:hover {
+        .imgWrap {
+            .img {
+                transform: translateX(-50%) scale(1.1);
+            }
+        }
+
+        .title {
+            color: $navigatorActiveBottmLineColor;
+        }
+    }
+
+    .imgWrap {
+        height: 75%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .img {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) scale(1);
+            transition: all .5s;
+        }
+    }
+
+    .title {
+        height: 25%;
+        font-weight: 700;
+        color: $fontColor;
+        font-size: 16px;
+        padding: 20px;
+        transition: all .5s;
+    }
+}

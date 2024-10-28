@@ -1,0 +1,18 @@
+.CompanyCulture {
+    width: 100%;
+    margin-top: 80px;
+
+    .mainTitle {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: $fontColor;
+        margin-bottom: 50px;
+    }
+
+    .CompanyCultureWrap {
+        @include globalWidth();
+        display: flex;
+        justify-content: space-between;
+    }
+}

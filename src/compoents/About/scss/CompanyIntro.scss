@@ -1,0 +1,50 @@
+.CompanyIntro {
+    width: 100%;
+    margin-top: 80px;
+
+
+    .mainTitle {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: $fontColor;
+        margin-bottom: 50px;
+    }
+
+    .CompanyIntroWrap {
+        $height: 370px;
+        @include globalWidth();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $height;
+        position: relative;
+
+        .imgWrap {
+            height: $height;
+            width: 48%;
+            overflow: hidden;
+
+            .img {
+                height: $height;
+            }
+        }
+
+        .content {
+            height: $height;
+            width: 48%;
+            overflow-y: auto;
+            line-height: 25px;
+            font-size: 16px;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #1275e5;
+                border-radius: 5px;
+            }
+        }
+    }
+}

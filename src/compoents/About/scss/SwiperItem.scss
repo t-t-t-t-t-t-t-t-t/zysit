@@ -1,0 +1,20 @@
+.SwiperItem {
+    height: 210px;
+    position: relative;
+
+    .img {
+        height: 140px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .title {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: $fontColor;
+    }
+}

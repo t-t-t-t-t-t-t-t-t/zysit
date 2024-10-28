@@ -1,0 +1,39 @@
+.Partner {
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+
+    .mainTitle {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: $fontColor;
+        margin-bottom: 50px;
+    }
+
+    .PartnerWrap {
+        @include globalWidth();
+
+        .imgList {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgWrap {
+                height: 68px;
+                width: 185px;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 10px;
+                background-color: #fff;
+
+                .img {
+                    height: 100%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

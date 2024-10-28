@@ -350,18 +350,85 @@ export function NavigatorRight1() {
                 }]
             }]
     }
-    const NavigatorItem1Content2 = {
+    const NavigatorItem2Content3 = {
         title: '应用案例',
         href: '/cases',
-        content: [{ name: '排水管网检测', href: '' },
-        { name: '水工隧洞检测', href: '' },
-        { name: '地质雷达检测', href: '' },
-        { name: '水库大坝安全监测', href: '' },
-        { name: '大坝内部变形监测', href: '' },
-        { name: '建筑物变形监测', href: '' },
-        { name: '信息化平台开发', href: '' },
-        { name: '实景三维与数字孪生', href: '' },
-        ]
+        content:
+            [{
+                name: '水利工程',
+                href: '',
+                content: [{
+                    name: '中小型水库群监测',
+                    href: '',
+                },
+                {
+                    name: '管道测量机器人',
+                    href: '',
+                },
+                {
+                    name: '光明项管部水库溃坝分析服务',
+                    href: '',
+                },
+                ]
+            },
+            {
+                name: '检测',
+                href: '',
+                content: [{
+                    name: '200km带水管渠检测专项解决方案',
+                    href: '',
+                },
+                {
+                    name: '南山区排海干渠检测',
+                    href: ''
+                },
+                {
+                    name: '深圳东江水源隧洞检测',
+                    href: ''
+                },
+                {
+                    name: '粤港东深供水工程',
+                    href: ''
+                },
+                {
+                    name: '深圳市北部水源工程',
+                    href: ''
+                }]
+            },
+            {
+                name: '无人机优视测量',
+                id: 2,
+                href: '',
+                content: [{
+                    name: '丹江口水库无人机优视摄影测量',
+                    href: '',
+                },
+                {
+                    name: '小湾水电站无人机优视摄影测量',
+                    href: ''
+                }]
+            },
+            {
+                name: '惯性视觉相机',
+                href: '',
+                content: [{
+                    name: '春风路下穿隧道建筑物沉降监测',
+                    href: '',
+                },
+                {
+                    name: '地铁（莲花村站）隧洞沉降监测',
+                    href: ''
+                }]
+            },
+            {
+                name: '系统建设',
+                href: '',
+                content: [{
+                    name: '深圳市龙岗排水有限公司生产运营平台龙排通建设项目',
+                    href: '',
+                }
+                ]
+            }]
     }
     const NavigatorItem3Content1 = {
         title: '服务支持',
@@ -397,14 +464,13 @@ export function NavigatorRight1() {
                 content={NavigatorItem2Content2.content}
                 href={NavigatorItem2Content2.href}>
             </NavigatorItem2>
-            <NavigatorItem1
-                title={NavigatorItem1Content2.title}
-                content={NavigatorItem1Content2.content}
-                href={NavigatorItem1Content2.href}  >
-            </NavigatorItem1>
+            <NavigatorItem2
+                title={NavigatorItem2Content3.title}
+                content={NavigatorItem2Content3.content}
+                href={NavigatorItem2Content3.href}  >
+            </NavigatorItem2>
             <NavigatorItem3 title={NavigatorItem3Content1.title} href={NavigatorItem3Content1.href}></NavigatorItem3>
             <NavigatorItem3 title={NavigatorItem3Content2.title} href={NavigatorItem3Content2.href}></NavigatorItem3>
-
         </div>
     )
 }
