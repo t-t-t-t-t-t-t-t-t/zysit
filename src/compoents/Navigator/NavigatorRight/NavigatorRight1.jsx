@@ -250,105 +250,25 @@ export function NavigatorRight1() {
                 }]
             }]
     }
-    const NavigatorItem2Content2 = {
+    const NavigatorItem1Content1 = {
         title: '解决方案',
         href: '/solution',
-        content:
-            [{
-                name: '交通',
-                id: 0,
-                href: '',
-                content: [{
-                    name: '桥梁',
-                    id: 0,
-                    href: '',
-                },
-                {
-                    name: '公路',
-                    id: 1,
-                    href: ''
-                },
-                {
-                    name: '边坡',
-                    id: 2,
-                    href: ''
-                },
-                {
-                    name: '隧道',
-                    id: 3,
-                    href: ''
-                },
-                {
-                    name: '地铁',
-                    id: 4,
-                    href: ''
-                },
-                {
-                    name: '高铁',
-                    id: 5,
-                    href: ''
-                }]
-            },
-            {
-                name: '水利',
-                id: 1,
-                href: '',
-                content: [{
-                    name: '水库大坝',
-                    id: 0,
-                    href: '',
-                },
-                {
-                    name: '水工隧道',
-                    id: 1,
-                    href: ''
-                },
-                {
-                    name: '河道',
-                    id: 2,
-                    href: ''
-                },
-                {
-                    name: '排水管网',
-                    id: 3,
-                    href: ''
-                }]
-            },
-            {
-                name: '建筑',
-                id: 2,
-                href: '',
-                content: [{
-                    name: '楼宇',
-                    id: 0,
-                    href: '',
-                },
-                {
-                    name: '基坑',
-                    id: 1,
-                    href: ''
-                }]
-            },
-            {
-                name: '自然资源',
-                id: 3,
-                href: '',
-                content: [{
-                    name: '地灾',
-                    id: 0,
-                    href: '',
-                },
-                {
-                    name: '露天矿厂',
-                    id: 1,
-                    href: ''
-                },
-                {
-                    name: '尾矿车',
-                    id: 2,
-                    href: ''
-                }]
-            }]
+        content: [
+            { name: '水库大坝', href: '' },
+            { name: '边坡', href: '' },
+            { name: '地灾', href: '' },
+            { name: '桥梁', href: '' },
+            { name: '地铁', href: '' },
+            { name: '高铁', href: '' },
+            { name: '公路', href: '' },
+            { name: '隧道', href: '' },
+            { name: '建筑', href: '' },
+            { name: '排水管网', href: '' },
+            { name: '河道', href: '' },
+            { name: '水工隧道', href: '' },
+            { name: '基坑', href: '' },
+            { name: '尾矿库', href: '' },
+        ]
     }
     const NavigatorItem2Content3 = {
         title: '应用案例',
@@ -459,11 +379,11 @@ export function NavigatorRight1() {
                 content={NavigatorItem2Content1.content}
                 href={NavigatorItem2Content1.href}>
             </NavigatorItem2>
-            <NavigatorItem2
-                title={NavigatorItem2Content2.title}
-                content={NavigatorItem2Content2.content}
-                href={NavigatorItem2Content2.href}>
-            </NavigatorItem2>
+            <NavigatorItem1
+                title={NavigatorItem1Content1.title}
+                content={NavigatorItem1Content1.content}
+                href={NavigatorItem1Content1.href}>
+            </NavigatorItem1>
             <NavigatorItem2
                 title={NavigatorItem2Content3.title}
                 content={NavigatorItem2Content3.content}

@@ -1,7 +1,8 @@
 import './scss/ProductionSwiperItem.scss'
+import { Link } from 'react-router-dom'
 export function ProductionSwiperItem({ scene }) {
     return (
-        <div className="ProductionSwiperItem">
+        <Link to='/solutionDetail' className="ProductionSwiperItem" style={{ textDecoration: 'none' }}>
             <div className="imgWrap">
                 <img className='img' src={scene.img} alt="" />
             </div>
@@ -13,6 +14,6 @@ export function ProductionSwiperItem({ scene }) {
                     {scene.content}
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
