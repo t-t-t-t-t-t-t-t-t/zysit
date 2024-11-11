@@ -17,6 +17,16 @@ export default defineConfig(() => {
                     additionalData: "@import '/src/global.scss';"
                 }
             }
+        },
+        server: {
+            proxy: {
+                '/webApi': {
+                    //目标路径
+                    target: 'http://112.74.15.57:3000/',
+                    //换源
+                    changeOrigin: true,
+                }
+            },
         }
     };
 });
