@@ -4,14 +4,13 @@ import { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
-export function NavigatorItem2({ title, content, href }) {
+export function NavigatorItem2({ title, content, url }) {
     const [isInRoute, setisInRoute] = useState(false)
     const [isShowList, setIsShowList] = useState(false)
     const [isRotate, setIsRotate] = useState(false)
     const [listPos, setListPost] = useState(0)
     const nameDom = useRef(null)
     const location = useLocation()
-
     // 显示哪个Item
     const [currentItem, setCurrentItem] = useState(0)
     // 初始化距离
@@ -19,8 +18,8 @@ export function NavigatorItem2({ title, content, href }) {
         setListPost(nameDom.current.offsetHeight + 5)
     }, [])
     useEffect(() => {
-        setisInRoute(location.pathname == href)
-        if (href == '/product' && location.pathname == '/productDetail') {
+        setisInRoute(location.pathname == url)
+        if (url == '/product' && location.pathname == '/productDetail') {
             setisInRoute(true)
         }
     }, [location])
@@ -53,7 +52,7 @@ export function NavigatorItem2({ title, content, href }) {
     }
     return (
         <div className="NavigatorItem2">
-            <NavLink to={href} className="link"
+            <NavLink to={url} className="link"
                 style={{ textDecoration: 'none' }}
                 ref={nameDom}
                 onMouseEnter={e => { onHandleMouseEnterName() }}
@@ -64,27 +63,27 @@ export function NavigatorItem2({ title, content, href }) {
                 </div>
             </NavLink>
 
-            <div className="list" style={{ top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { onHandleMouseLeaveList() }}>
+            {content.length && <div className="list" style={{ top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { onHandleMouseLeaveList() }}>
                 <div className="listLeft">
                     {content.map((item, index) => (
                         <NavLink
-                            to={item.href}
+                            to={item.url}
                             key={index} className="listItem"
                             style={{ cursor: isShowList ? 'pointer' : 'default' }}
                             onMouseEnter={e => { onHandleMouseEnterItem(index); }}
                         >
-                            <span>{item.name}</span>
+                            <span>{item.title}</span>
                         </NavLink>
                     ))}
                 </div>
-                <div className="listRight">{
-                    content[currentItem].content.map((item, index) => (
-                        <NavLink to={item.href} className="listContentItem" key={index}>
-                            {item.name}
+                <div className="listRight">
+                    {content[currentItem].content && content[currentItem].content.map((item, index) => (
+                        <NavLink to={item.url} className="listContentItem" key={index}>
+                            {item.title}
                         </NavLink>))
-                }
+                    }
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

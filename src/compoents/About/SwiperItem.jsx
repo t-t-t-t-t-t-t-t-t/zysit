@@ -1,10 +1,8 @@
 import './scss/SwiperItem.scss'
-import imgSrc from '../../assets/imgs/About/Honor/1.jpg'
-
-export function SwiperItem({ img = imgSrc, title = "titletitletitletitle" }) {
+export function SwiperItem({ image, title }) {
     return (
         <div className="SwiperItem">
-            <img className='img' src={img} alt="" />
+            <img className='img' src={image} alt="" />
             <div className="title">{title}</div>
         </div>
     )

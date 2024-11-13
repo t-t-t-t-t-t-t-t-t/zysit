@@ -1,5 +1,4 @@
-import { addProductApi, putProductApi, deleteProductApi, getProductListApi, getProductSolutionListApi } from "../api/product"
-import { ElMessage } from "element-plus";
+import { getProductListApi, getProductSolutionListApi, getProductListByCategoryApi } from "../api/product"
 export function useProductHooks() {
     const getProductList = async (_id = "") => {
         try {
@@ -18,8 +17,17 @@ export function useProductHooks() {
             console.log(err);
         }
     }
+    const getProductListByCategory = async (category) => {
+        try {
+            const res = await getProductListByCategoryApi(category);
+            return res.data;
+        } catch (err) {
+            console.log(err);
+        }
+    }
     return {
         getProductList,
-        getProductSolutionList
+        getProductSolutionList,
+        getProductListByCategory
     }
 }

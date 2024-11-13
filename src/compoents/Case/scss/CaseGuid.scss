@@ -22,6 +22,12 @@
             text-decoration: none;
             margin: 0 15px;
 
+            &.active {
+                &::before {
+                    width: 100%;
+                }
+            }
+
             &:hover {
                 &::before {
                     width: 100%;

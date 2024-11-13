@@ -1,13 +1,30 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { ProductionCard } from '../Production/ProductionCard';
-import { getProductionByName } from '../Production/ProductContent'
 import { Button } from '../Button/Button';
 import './scss/MainProduction.scss'
 import 'swiper/css';
 import 'swiper/css/autoplay'
-
-export function MainProduction({ mainProduction = ['INSAR沉降监测', '表面式应变计', '磁致式沉降仪', '大坝内部变形监测机器人', '导轮式固定测斜仪'] }) {
+import { useProductHooks } from '../../hooks/ProductHooks'
+import { useEffect, useState } from 'react';
+const initProduct = (mainProduct) => {
+    const promiseProductContent = mainProduct.map((item, idx) => {
+        return useProductHooks().getProductList(item._id).then(res => res[0]);
+    })
+    return Promise.all(promiseProductContent)
+}
+export function MainProduction({ mainProduct }) {
+    const [productContentData, setProductContentData] = useState();
+    useEffect(() => {
+        if (mainProduct) {
+            initProduct(mainProduct).then(res => {
+                setProductContentData(preState => { return [...res] })
+                console.log(res)
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+    }, [mainProduct])
     return (
         <div className="MainProduction">
             <div className="MainProductionWrap">
@@ -27,11 +44,10 @@ export function MainProduction({ mainProduction = ['INSAR沉降监测', '表面�
                     speed={3000}
                     loop={true}
                     className="mySwiper">
-                    {mainProduction.map((item, idx) => {
-                        let production = getProductionByName(item);
+                    {productContentData && productContentData.map((production, idx) => {
                         return (
-                            <SwiperSlide >
-                                <ProductionCard key={idx} title={production.title} content={production.content} cardImg={production.cardImg} isHot={production.isHot} isNew={production.isNew}></ProductionCard>
+                            <SwiperSlide key={idx}>
+                                <ProductionCard _id={production._id} title={production.title} content={production.content} image={production.image} isHot={production.isHot} isNew={production.isNew}></ProductionCard>
                             </SwiperSlide>
                         )
                     })}

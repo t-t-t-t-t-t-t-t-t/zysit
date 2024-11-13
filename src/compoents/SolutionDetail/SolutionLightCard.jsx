@@ -1,5 +1,5 @@
 import './scss/SolutionLightCard.scss'
-import icon_temp from '../../assets/imgs/Solution/item1/桥梁/icon.png'
+import icon_temp from '../../assets/icons/icon.png'
 export function SolutionLightCard({ icon = icon_temp, title = '桥梁', content = '桥梁桥梁桥梁桥梁桥梁桥梁桥梁桥梁桥梁桥梁桥梁桥梁' }) {
 
     return (

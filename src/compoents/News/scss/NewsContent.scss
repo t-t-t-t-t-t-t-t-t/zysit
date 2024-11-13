@@ -1,0 +1,21 @@
+.NewsContent {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    .mainTitle {
+        font-size: 36px;
+        margin-bottom: 50px;
+        color: $fontColor;
+        font-weight: 700;
+        text-align: center;
+        animation: fadeInUP .5s ease-in .6s;
+    }
+
+    .NewsContentWrap {
+        @include globalWidth();
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

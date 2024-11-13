@@ -1,8 +1,7 @@
 import './scss/ProductionDisplay.scss'
 import { useNavigate } from 'react-router-dom'
 import backgroundImg from '../../assets/imgs/ProductionDetail/ProductionDisplay/ProductionDisplay.jpg'
-import productionImgTemp from '../../assets/imgs/Production/ProductionItem/item1/表面式应变计.jpg'
-export const ProductionDisplay = ({ title = '表面式应变计', productionImg = productionImgTemp }) => {
+export const ProductionDisplay = ({ title = '表面式应变计', productionImg }) => {
     let navigate = useNavigate();
     return (
         <div className="ProductionDisplay">

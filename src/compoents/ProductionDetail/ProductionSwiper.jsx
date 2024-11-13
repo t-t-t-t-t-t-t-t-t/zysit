@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { ProductionSwiperItem } from './ProductionSwiperItem';
-import { getSceneByName } from './ProductionScene'
 import './scss/ProductionSwiper.scss'
 import 'swiper/css';
 import 'swiper/css/autoplay'
@@ -26,13 +25,10 @@ export function ProductionSwiper({ productionScene }) {
                     loop={true}
                     slidesPerView={4}
                     className="mySwiper">
-                    {productionScene.map((item, idx) => {
-                        let scene = getSceneByName(item);
-                        if (scene.isFind) {
-                            return (
-                                <SwiperSlide ><ProductionSwiperItem scene={scene.scene}></ProductionSwiperItem></SwiperSlide>
-                            )
-                        }
+                    {productionScene && productionScene.map((item, idx) => {
+                        return (
+                            <SwiperSlide key={idx}><ProductionSwiperItem _id={item._id}></ProductionSwiperItem></SwiperSlide>
+                        )
                     })}
                 </Swiper>
             </div>

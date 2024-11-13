@@ -1,7 +1,7 @@
 import './scss/DemandCard.scss'
 import { useState } from 'react'
-import icon_temp from '../../assets/imgs/Solution/item1/桥梁/icon.png'
-import icon_active_temp from '../../assets/imgs/Solution/item1/桥梁/icon_active.png'
+import icon_temp from '../../assets/icons/icon.png'
+import icon_active_temp from '../../assets/icons/icon_active.png'
 export function DemandCard({ title = '桥梁', content = '桥梁桥梁桥梁桥梁桥梁桥梁桥梁', icon = icon_temp, icon_active = icon_active_temp }) {
     const [iconActive, seticonActive] = useState(false)
     function handleMouseEnter() {

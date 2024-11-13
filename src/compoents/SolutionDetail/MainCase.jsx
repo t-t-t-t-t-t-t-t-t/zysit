@@ -1,7 +1,7 @@
 import './scss/MainCase.scss'
-import imgTemp from '../../assets/imgs/Solution/item1/桥梁/桥梁.jpg'
 import { Button } from '../Button/Button'
-export function MainCase({ img = imgTemp, caseList = [{ title: "典型案例", content: '典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例' }, { title: "典型案例", content: '典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例典型案例' }] }) {
+import { NavLink } from 'react-router-dom'
+export function MainCase({ mainCaseImage, mainCase }) {
     return (
         <div className="MainCase">
             <div className="MainCaseWrap">
@@ -10,20 +10,17 @@ export function MainCase({ img = imgTemp, caseList = [{ title: "典型案例", c
                 </div>
                 <div className="contentWrap">
                     <div className="imgWrap">
-                        <img className='img' src={img} alt="" />
+                        {mainCaseImage && <img className='img' src={mainCaseImage} alt="" />}
                     </div>
                     <div className="caseList">
                         {
-                            caseList.map((item, idx) => {
+                            mainCase && mainCase.map((item, idx) => {
                                 return (
-                                    <div className="case" key={idx}>
+                                    <NavLink style={{ textDecoration: 'none', display: 'block' }} to={`/caseDetail?_id=${item._id}`} className="case" key={idx}>
                                         <div className="title">
                                             {item.title}
                                         </div>
-                                        <div className="content">
-                                            {item.content}
-                                        </div>
-                                    </div>
+                                    </NavLink>
                                 )
                             })
                         }

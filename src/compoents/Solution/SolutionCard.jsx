@@ -1,10 +1,10 @@
 import './scss/SolutionCard.scss'
-import icon_temp from '../../assets/imgs/Solution/item1/桥梁/icon.png'
-import icon_active_temp from '../../assets/imgs/Solution/item1/桥梁/icon_active.png'
+import icon_temp from '../../assets/icons/icon.png'
+import icon_active_temp from '../../assets/icons/icon_active.png'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export function SolutionCard({ title = "科技", content = "科技科技科技科技科技科技科技科技科技科技科技科技科技科技科技", icon = icon_temp, icon_active = icon_active_temp }) {
+export function SolutionCard({ _id, title = "科技", content = "科技科技科技科技科技科技科技科技科技科技科技科技科技科技科技", icon = icon_temp, icon_active = icon_active_temp }) {
     const navigate = useNavigate();
     const [iconActive, seticonActive] = useState(false)
     function handleMouseEnter() {
@@ -14,7 +14,7 @@ export function SolutionCard({ title = "科技", content = "科技科技科技�
         seticonActive(false)
     }
     function pageTo() {
-        navigate('/solutionDetail')
+        navigate(`/solutionDetail?_id=${_id}`)
     }
     return (
         <div className="SolutionCard" onClick={pageTo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

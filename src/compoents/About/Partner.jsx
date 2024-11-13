@@ -4,9 +4,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay'
-import img from '../../assets/imgs/About/Partner/1.jpg'
+import { useFriendHooks } from '../../hooks/FriendHooks'
+import { useEffect, useState } from 'react';
 export function Partner() {
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+    const [friendContent, setFriendContent] = useState()
+    useEffect(() => {
+        useFriendHooks().getFriendList().then(res => {
+            setFriendContent(preState => [...res])
+        })
+    }, [])
     return (
         <div className="Partner">
             <div className="mainTitle">合作伙伴</div>
@@ -25,22 +31,14 @@ export function Partner() {
                     }}
                     speed={2000}
                     loop={true}
-                    slidesPerView={6}
+                    slidesPerView={4}
                     className="mySwiper">
                     {
-                        arr.map((item, idx) => {
+                        friendContent && friendContent.map((item, idx) => {
                             return (
                                 <SwiperSlide key={idx}>
-                                    <div className="imgList">
-                                        <div className="imgWrap">
-                                            <img className='img' src={img} alt="" />
-                                        </div>
-                                        <div className="imgWrap">
-                                            <img className='img' src={img} alt="" />
-                                        </div>
-                                        <div className="imgWrap">
-                                            <img className='img' src={img} alt="" />
-                                        </div>
+                                    <div className="imgWrap">
+                                        <img className='img' src={item.image} alt="" />
                                     </div>
                                 </SwiperSlide>
                             )

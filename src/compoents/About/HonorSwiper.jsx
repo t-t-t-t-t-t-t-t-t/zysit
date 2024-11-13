@@ -4,7 +4,15 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay'
 import { SwiperItem } from './SwiperItem';
+import { useHonerHooks } from '../../hooks/HonerHooks'
+import { useEffect, useState } from 'react';
 export function HonorSwiper() {
+    const [honerContent, setHonerContent] = useState()
+    useEffect(() => {
+        useHonerHooks().getHonerList().then(res => {
+            setHonerContent(preState => [...res])
+        })
+    }, [])
     return (
         <div className="HonorSwiper">
             <div className="mainTitle">荣誉资质</div>
@@ -25,24 +33,13 @@ export function HonorSwiper() {
                     loop={true}
                     slidesPerView={4}
                     className="mySwiper">
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <SwiperItem></SwiperItem>
-                    </SwiperSlide>
+                    {honerContent && honerContent.map((item, idx) => {
+                        return (
+                            <SwiperSlide key={idx} >
+                                <SwiperItem title={item.title} image={item.image}></SwiperItem>
+                            </SwiperSlide>
+                        )
+                    })}
                 </Swiper>
             </div>
         </div>

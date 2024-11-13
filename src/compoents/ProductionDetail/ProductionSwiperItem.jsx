@@ -1,19 +1,31 @@
 import './scss/ProductionSwiperItem.scss'
 import { Link } from 'react-router-dom'
-export function ProductionSwiperItem({ scene }) {
+import { useSolutionHooks } from '../../hooks/SolutionHooks';
+import { useState, useEffect } from 'react';
+export function ProductionSwiperItem({ _id }) {
+    const [scene, setScene] = useState()
+    useEffect(() => {
+        if (_id) {
+            useSolutionHooks().getSolutionList(_id).then(res => {
+                setScene(res[0])
+            })
+        }
+    }, [_id])
     return (
-        <Link to='/solutionDetail' className="ProductionSwiperItem" style={{ textDecoration: 'none' }}>
-            <div className="imgWrap">
-                <img className='img' src={scene.img} alt="" />
-            </div>
-            <div className="textWrap">
-                <div className="title">
-                    {scene.title}
+        <>
+            {scene && <Link to={`/solutionDetail/?_id=${scene._id}`} className="ProductionSwiperItem" style={{ textDecoration: 'none' }}>
+                <div className="imgWrap">
+                    <img className='img' src={scene.contentImage} alt="" />
                 </div>
-                <div className="content">
-                    {scene.content}
+                <div className="textWrap">
+                    <div className="title">
+                        {scene.title}
+                    </div>
+                    <div className="content">
+                        {scene.content}
+                    </div>
                 </div>
-            </div>
-        </Link>
+            </Link>}
+        </>
     )
 }

@@ -1,7 +1,7 @@
 import './scss/DemandAnalysis.scss'
 import { DemandCard } from "./DemandCard"
 
-export function DemandAnalysis() {
+export function DemandAnalysis({ demandAnalysis }) {
     return (
         <div className="DemandAnalysis">
             <div className="DemandAnalysisWrap">
@@ -9,9 +9,11 @@ export function DemandAnalysis() {
                     需求分析
                 </div>
                 <div className="cardWrap">
-                    <DemandCard></DemandCard>
-                    <DemandCard></DemandCard>
-                    <DemandCard></DemandCard>
+                    {
+                        demandAnalysis && demandAnalysis.map((item, idx) => {
+                            return (<DemandCard key={idx} title={item.title} content={item.content}></DemandCard>)
+                        })
+                    }
                 </div>
             </div>
         </div>

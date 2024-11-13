@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
 export function NavigatorItem1({ title,
-    content, href }) {
+    content, url }) {
     const [isInRoute, setisInRoute] = useState(false)
     const [isShowList, setIsShowList] = useState(false)
     const [isRotate, setIsRotate] = useState(false)
@@ -17,7 +17,7 @@ export function NavigatorItem1({ title,
         setListPost(nameDom.current.offsetHeight + 5)
     }, [])
     useEffect(() => {
-        setisInRoute(location.pathname == href)
+        setisInRoute(location.pathname == url)
     }, [location])
     function onHandleMouseEnterName() {
         setIsShowList(true)
@@ -42,7 +42,7 @@ export function NavigatorItem1({ title,
     }
     return (
         <div className="NavigatorItem1">
-            <NavLink to={href}
+            <NavLink to={url}
                 style={{ textDecoration: 'none' }}
                 className="link"
                 ref={nameDom}
@@ -54,8 +54,8 @@ export function NavigatorItem1({ title,
             </NavLink>
             <div className="list" style={{ display: haveContent ? 'block' : 'none !important', top: listPos, cursor: isShowList ? 'pointer' : 'default' }} onMouseEnter={e => { e.stopPropagation(); onHandleMouseEnterList() }} onMouseLeave={e => { e.stopPropagation(); onHandleMouseLeaveList() }}>
                 {content.map((item, index) => (
-                    <NavLink to={item.href} key={index} className="listItem" style={{ cursor: isShowList ? 'pointer' : 'default' }}>
-                        <span>{item.name}</span>
+                    <NavLink to={item.url} key={index} className="listItem" style={{ cursor: isShowList ? 'pointer' : 'default' }}>
+                        <span>{item.title}</span>
                     </NavLink>
                 ))}
             </div>

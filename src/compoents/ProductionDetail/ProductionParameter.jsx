@@ -10,13 +10,13 @@ export function ProductionParameter({ parameter }) {
                         <div className="label">产品功能</div>
                         <div className="value">详细参数</div>
                     </div>
-                    {parameter.map((item, idx) => (
-                        <div className="item">
+                    {parameter && parameter.map((item, idx) => (
+                        <div className="item" key={idx}>
                             <div className="label">
-                                {item.label}
+                                {item.key}
                             </div>
                             <div className="value">
-                                {item.content}
+                                {item.value}
                             </div>
                         </div>
                     ))}

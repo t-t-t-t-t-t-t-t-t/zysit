@@ -1,5 +1,4 @@
-import { addSolutionApi, putSolutionApi, deleteSolutionApi, getSolutionListApi, getProductTitleApi, getCasesTitleApi } from "../api/solution"
-import { ElMessage } from "element-plus";
+import { getSolutionListApi, getProductTitleApi, getCasesTitleApi, getSolutionListByCategoryApi } from "../api/solution"
 export function useSolutionHooks() {
     const getSolutionList = async (_id = "") => {
         try {
@@ -25,9 +24,19 @@ export function useSolutionHooks() {
             console.log(err);
         }
     }
+    const getSolutionListByCategory = async (category) => {
+        try {
+            const res = await getSolutionListByCategoryApi(category);
+            return res.data;
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     return {
         getSolutionList,
         getProductTitle,
-        getCasesTitle
+        getCasesTitle,
+        getSolutionListByCategory
     }
 }

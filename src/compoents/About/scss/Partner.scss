@@ -14,25 +14,20 @@
     .PartnerWrap {
         @include globalWidth();
 
-        .imgList {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        .imgWrap {
+            height: 102px;
+            width: 227px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+            background-color: #fff;
+            margin: 0 20px;
 
-            .imgWrap {
-                height: 68px;
-                width: 185px;
-                position: relative;
-                overflow: hidden;
-                margin-bottom: 10px;
-                background-color: #fff;
-
-                .img {
-                    height: 100%;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+            .img {
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }

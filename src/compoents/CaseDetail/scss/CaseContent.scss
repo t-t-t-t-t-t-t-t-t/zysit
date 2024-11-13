@@ -1,6 +1,15 @@
 .CaseContent {
     width: 100%;
-    margin-top: 80px;
+
+
+    .title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        color: $fontColor;
+        text-align: center;
+        font-weight: 700;
+    }
 
     .CaseContentWrap {
         @include globalWidth();
@@ -8,30 +17,5 @@
         padding: 80px 100px;
         border-radius: 10px;
 
-        .title {
-            font-size: 22px;
-            color: $fontColor;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .line {
-            height: 1px;
-            width: 100%;
-            background-color: #e5e5e5;
-            margin: 50px 0;
-        }
-
-        .img {
-            width: 100%;
-        }
-
-        .content {
-            font-size: 16px;
-            font-weight: 500;
-            color: $textFontColor;
-            margin-bottom: 45px;
-
-        }
     }
 }

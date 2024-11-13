@@ -1,5 +1,13 @@
 import './scss/Banner1.scss'
-export const Banner1 = ({ banner = { title: '关于智源', content: '始终践行“智能硬件驱动的安全检测场景解决方案供应商”的目标', image: "" }, color = '#fff' }) => {
+import { useBannerHooks } from '../../hooks/BannerHooks'
+import { useState, useEffect } from "react"
+export const Banner1 = ({ bannerType = 'about', color = '#fff' }) => {
+    const [banner, setBanner] = useState({})// banner数据
+    useEffect(() => {// 用useState直接在内部更新，会导致死循环
+        useBannerHooks().getBannerList(bannerType).then(res => {
+            setBanner(res[0])
+        })
+    }, [])
     return (
         <div className="Banner1">
             <div className='textWrap'>
@@ -9,7 +17,7 @@ export const Banner1 = ({ banner = { title: '关于智源', content: '始终践�
                 </div>
             </div>
             <div className='imgWrap'>
-                <img className='img' src={banner.image} alt={banner.title} />
+                {banner.image && <img className='img' src={banner.image} alt={banner.title} />}
             </div>
         </div>
     )

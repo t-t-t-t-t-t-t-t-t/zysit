@@ -4,16 +4,16 @@ import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
-export function NavigatorItem3({ title, href }) {
+export function NavigatorItem3({ title, url }) {
     const [isInRoute, setisInRoute] = useState(false)
     const location = useLocation()
     useEffect(() => {
-        setisInRoute(location.pathname == href)
+        setisInRoute(location.pathname == url)
     }, [location])
 
     return (
         <div className="NavigatorItem3">
-            <NavLink to={href}
+            <NavLink to={url}
                 style={{ textDecoration: 'none' }}
                 className="link">
                 <span>  {title}</span>

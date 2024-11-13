@@ -1,14 +1,12 @@
 import './scss/CaseCard.scss'
-import imgSrc from '../../assets/imgs/Solution/item1/桥梁/桥梁.jpg'
 import { Link } from 'react-router-dom'
 
-export function CaseCard({ img = imgSrc, title = "水利水利水利水利水利水利水利水利水利水利水利水利" }) {
-
+export function CaseCard({ _id, image, title = "水利水利水利水利水利水利水利水利水利水利水利水利" }) {
 
     return (
-        <Link to={`/caseDetail?name=${title}`} className="CaseCard">
+        <Link to={`/caseDetail?_id=${_id}`} style={{ textDecoration: 'none' }} className="CaseCard">
             <div className="imgWrap">
-                <img className='img' src={img} alt="" />
+                <img className='img' src={image} alt="" />
             </div>
             <div className="title">
                 {title}
