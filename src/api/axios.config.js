@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const baseUrl = import.meta.env.MODE === 'development' ? "http://localhost:3000/" : "http://112.74.15.57:3000/"; //用代理切换BaseUrl
-export const apiPrefix = import.meta.env.MODE === 'development' ? "/webApi" : "";//api 前缀
+export const apiPrefix = '/webApi'//api 前缀
 
 axios.baseURL = baseUrl
 axios.timeout = 10000
